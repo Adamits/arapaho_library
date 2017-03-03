@@ -6,8 +6,8 @@ import re
 import json, codecs
 
 # Read in .txt of IGT
-input_text = '../new_data/master_text.txt'
-arapaho_lexicon = "../lexicon_backup/arapaho_lexicon.json"
+input_text = './data/master_text.txt'
+arapaho_lexicon = "./data/arapaho_lexicon.json"
 glossed_text = ""
 
 with open(input_text, 'r') as f:
