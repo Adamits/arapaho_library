@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-__author__ = 'ghamzak'
-__author__ = 'adam.wiemerslage' # Modified by Adam 2/26/2017
+__author__ = ['ghamzak', 'adam.wiemerslage']
 
 import re
 import json, codecs
+from ArapahoParser import ArapahoParser
 
 # Read in .txt of IGT
 input_text = './data/master_text.txt'
@@ -52,7 +52,8 @@ for i in range(len(glossed_text_list)):   #24203
       if re.match(r'\\ft', glossed_text_list[i][j]):
         glossed_text_dict[glossed_text_list[i][0]]['ft'].append(glossed_text_list[i][j])
 
-# repeat this step several times
+# Remove the space delimited '-' and put it in the list index
+# With the preceding string
 for i in glossed_text_dict.items():
   mb = i[1]['mb']
   for j in range(len(mb)):
@@ -67,10 +68,7 @@ for i in glossed_text_dict.items():
   # print(mb)
   glossed_text_dict[i[0]]['mb'] = mb
 
-with codecs.open(arapaho_lexicon, encoding='utf-8') as data_file_2:
-  data = json.load(data_file_2)
-
-# This has no dashes and no '' and no ' ' >> make sure len(mblist) is this number, not more.
+# This has no dashes and no '' and no ' '
 mblist = []
 mbdict = {}
 for i in glossed_text_dict.values():
@@ -88,10 +86,8 @@ for i in glossed_text_dict.values():
 for i in mblist:
   mbdict[i] = []
 
-#
-for i in glossed_text_dict.items():
-  #print i[1]
-  for j in i[1]['mb']:
+for text_line in glossed_text_dict.items():
+  for j in text_line[1]['mb']:
     a = re.split(r'\s+', j)
     if '' in a:
       a.remove('')
@@ -105,23 +101,19 @@ mbdict.pop('\\mb')  # now len(mbdict) = 15417
 mblist.remove('') if '' in mblist else '' #16351
 # mblist.remove(' ')
 
-# Set the new keys: examples and examplefrequency
-for i in data.items():
-  data[i[0]]['examples'] = []
-  data[i[0]]['examplefrequency'] = 0
+# Use arapaho_library parser
+parser = ArapahoParser()
+parser.parse()
 
-# Dicts of the form {lexid : morpheme}
+# Dicts of the form {lexeme: lex_id}
 lexlexid = {}  #25531
 allolexlexid = {}  #16286
-for i in data.items():
+for lexical_entry in parser.lexical_entries:
   # lexlexid[i[1]['lex']] = i[0]
-  lexlexid[i[0]] = i[1]['lex']
-for i in data.items():
-  if 'allolexemes' in i[1].keys() and i[1]['allolexemes']:
-    allolexlexid[i[0]] = []
-    for j in i[1]['allolexemes']:
-      # allolexlexid[j] = i[0]
-      allolexlexid[i[0]].append(j)
+  lexlexid[lexical_entry.lex_id] = lexical_entry.lex
+
+  if len(lexical_entry.allolexemes) > 0:
+    allolexlexid[lexical_entry].lex_id = lexical_entry.allolexemes
 
 # now we have three useful dictionaries:
 # one with all morphemes in the corpus with reference to their ref (called mbdict)
@@ -131,25 +123,30 @@ for i in data.items():
 # this way we'll find the lexid for that and we'll map examples to lexids
 # now we should also have a dict that maps refs to whole examples > that's glossed_text_dict > so we have it all
 
-prettyprintitems = {}
+
+# Looks like this instantiates dict of {ref: [ref]}
+# Then it adds to the list all the other important keys from the IGT
+# Let's do it smarter...
+glossed_text_items = {}
 for i in glossed_text_dict.items():
-  # try:
-  prettyprintitems[i[0]] = [i[0]]
+  ref = i[0]
+  # Let's build a dict of {ref: {tx: the value of tx, mb: the value of mb, etc}
+  glossed_text_items[ref] = {}
   for j in range(len(i[1]['tx'])):
     if i[1]['tx']:
       if len(i[1]['tx']) > j: #Check if index is in range
-        prettyprintitems[i[0]].append(i[1]['tx'][j])
+        glossed_text_items[i[0]].append(i[1]['tx'][j])
     if i[1]['mb']:
       if len(i[1]['mb']) > j:
-        prettyprintitems[i[0]].append(i[1]['mb'][j])
+        glossed_text_items[i[0]].append(i[1]['mb'][j])
     if i[1]['ge']:
       if len(i[1]['ge']) > j:
-        prettyprintitems[i[0]].append(i[1]['ge'][j])
+        glossed_text_items[i[0]].append(i[1]['ge'][j])
     if i[1]['ps']:
       if len(i[1]['ps']) > j:
-        prettyprintitems[i[0]].append(i[1]['ps'][j])
+        glossed_text_items[i[0]].append(i[1]['ps'][j])
   if i[1]['ft']:
-    prettyprintitems[i[0]].append(i[1]['ft']) #this is a list which could be empty
+    glossed_text_items[i[0]].append(i[1]['ft']) #this is a list which could be empty
   # except:
   #     print("mismatch in ref ")
   #     print(i[0])
