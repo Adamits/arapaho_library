@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import json
 from time import strftime
 from objectpath import *
@@ -8,21 +9,31 @@ import re
 # an attribute of a LexicalEntry SHOULD also update the json...
 
 # Path to arapaho_lexicon.json
-arapaho_json_path = "./data/arapaho_lexicon.json"
+def get_text_directory():
+  for line in open('config.txt'):
+    if line.startswith('lexicon_path'):
+      return line.split('=')[1].strip()
+  exit('WARNING: could not find a value for lexicon_path')
 
 class ArapahoLexicalParser(object):
   def __init__(self):
     self.lexical_entries = []
+    self.lexeme_and_example = {}
+    self.allolexeme_and_example = {}
     self.json = {}
 
   def parse(self):
-    with open(arapaho_json_path) as data_file:
+    with open(get_text_directory()) as data_file:
       arapaho_json = json.load(data_file)
       self.json = arapaho_json
 
     for lex_id, lex_entry in arapaho_json.items():
       # Instantiate a lexical entry of all the json at this lex_id
-      self.lexical_entries.append(LexicalEntry({lex_id: lex_entry}))
+      lexical_entry = LexicalEntry({lex_id: lex_entry})
+      self.lexical_entries.append(lexical_entry)
+      self.lexeme_and_example[lexical_entry.lex] = lexical_entry
+      for allolexeme in lexical_entry.allolexemes:
+        self.allolexeme_and_example[allolexeme] = lexical_entry
 
   def where(self, query_string):
     # Need to copy the json in order to modify so that we can do a little
@@ -141,6 +152,9 @@ class LexicalEntry(JsonObject):
       self.examples = [Example(e) for e in self.json[self.lex_id]["examples"]]
     except:
       self.examples = []
+
+#  def add_example(self, options={}):
+
 
 class Derivation(JsonObject):
   def __init__(self, derivation_json):
