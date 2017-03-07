@@ -17,7 +17,9 @@ def get_lexicon_directory():
 
 class ArapahoTextParser(object):
   def __init__(self):
-    self.examples = []
+    self.examples          = []
+    self.refs              = []
+    self.refs_and_examples = {}
 
   def parse(self):
     # Get all lines from text, removing trailing whitespace
@@ -67,9 +69,12 @@ class ArapahoTextParser(object):
             # Double check if there was actually example data in the example_block, or just noise
             if text_example.contains_data():
               self.examples.append(text_example)
+              self.refs_and_examples[text_example.ref].append(text_example)
 
         # Store the value of the ref, and remove trailing whitespace
         current_ref = re.split(r'\\ref', line)[1].strip()
+        self.refs.append(current_ref)
+        self.refs_and_examples[current_ref] = []
         current_ref_dict = {}
         current_ref_dict["tx"] = []
         current_ref_dict["mb"] = []
@@ -87,8 +92,28 @@ class ArapahoTextParser(object):
       elif re.match(r'\\ft', line):
         current_ref_dict["ft"].append(re.split(r'\\ft', line)[1].strip())
 
+  def where(self, query_dict):
+    match_examples = []
+    for example in self.examples:
+      example_dict = example.__dict__
+      # Check if the query dict is in the example_dict
+      if set(query_dict.items()).issubset(set(example_dict.items())):
+        match_examples.append(example)
+
+    return match_examples
+
+  def mbs_and_examples(self):
+    mb_dict = {}
+    for example in self.examples:
+      for mb in example.get_mb_list():
+        mb_dict.setdefault(mb, []).append(example)
+
+    return mb_dict
+
   def to_json(self):
-    return json.dumps([text_example.dict() for text_example in self.examples])
+    return json.dumps(text_example.json() for text_example in self.examples)
+
+    return all_data_dict
 
 class TextExample(object):
 
@@ -100,8 +125,8 @@ class TextExample(object):
     self.ps = options.get("ps", "")
     self.ft = options.get("ft", "")
 
-  def dict(self):
-    return {"ref": self.ref, "tx": self.tx, "mb": self.mb, "ge": self.ge, "ps": self.ps, "ft": self.ft}
+  def list(self):
+    return [self.ref, self.tx, self.mb, self.ge, self.ps, self.ft]
 
   def contains_data(self):
     return self.tx != "" or self.mb != "" or self.ge != "" or self.ps != "" or self.ft != ""
