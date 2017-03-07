@@ -3,26 +3,19 @@ __author__ = ['ghamzak', 'adam.wiemerslage']
 
 import re
 import json, codecs
-from ArapahoParser import ArapahoParser
+from ArapahoLexicalParser import ArapahoLexicalParser
+from ArapahoTextParser import ArapahoTextParser
 
-# Read in .txt of IGT
-input_text = './data/master_text.txt'
-arapaho_lexicon = "./data/arapaho_lexicon.json"
-glossed_text = ""
+lexical_parser = ArapahoLexicalParser()
+text_parser = ArapahoTextParser()
 
-with open(input_text, 'r') as f:
-  text = f.readlines()   #213262
-textcopy = text
-
-# Store as a string with just the IGT keys that we care about
-for i in range(len(textcopy)-1):
-  if re.match(r'\\ref', textcopy[i]) or re.match(r'\\tx', textcopy[i]) or re.match(r'\\mb', textcopy[i]) or re.match(r'\\ge', textcopy[i]) or re.match(r'\\ps', textcopy[i]) or re.match(r'\\ft', textcopy[i]):
-    glossed_text += textcopy[i]
+lexical_parser.parse()
+text_parser.parse()
 
 # Split into a list of separate \\refs
 glossed_text_list = re.split(r'\\ref ', glossed_text)
-# Split into su-arrays by line within the \\ref
-glossed_text_list = [re.split(r'\r\n', i) for i in glossed_text_list]
+# Split into sub-arrays by line within the \\ref
+glossed_text_list = [re.split(r'\n', i) for i in glossed_text_list]
 # Clean the data
 for i in glossed_text_list:
   i.remove('')

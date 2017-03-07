@@ -1,0 +1,413 @@
+\_sh v3.0  400  Text
+
+\id 77b
+
+\ref 77b.001
+\tx A simulated announcement for the funeral of (personal name).
+\ELANBegin 0.000
+\ELANEnd 12.750
+\ELANParticipant 6
+\ft
+\notes Funeral occurred later that week. Speaker was the official announcer. 
+Formally, the announcer speaks on behalf of the relatives, to the 
+guests attending, in the relatives voice.
+
+\ref 77b.002
+\tx koowoow?
+\mb koo-       woow
+\ge INTERR-    now.PERF
+\ps proclitic- part
+
+\ELANBegin 14.280
+\ELANEnd 14.630
+\ELANParticipant 6
+\ft ready?
+\notes
+
+\ref 77b.003
+\tx Wohei, heii, neneeninee     neito'eino',
+\mb wohei  heii  neneeni-  nee  neito'eino'
+\ge okay   hey!  IC.it is- 2PL  1S.relatives
+\ps part   part  vai-      infl infl+na.oblposs+infl
+
+\ELANBegin 19.960
+\ELANEnd 24.020
+\ELANParticipant 6
+\ft Well, listen here, you all who are my relatives,
+\notes
+
+\ref 77b.004
+\tx Netinenteewo'.
+\mb net-  inenteewo'
+\ge 1S-   people
+\ps infl- na.pl.poss
+
+\ELANBegin 24.090
+\ELANEnd 25.010
+\ELANParticipant 6
+\ft My people.
+\notes
+
+\ref 77b.005
+\tx Niine'eeno'  nuh'uuno
+\mb niine'eeno'  nuh'uuno
+\ge here are.3PL this
+\ps pseudovai    det.EMPH
+
+\tx cenoowouuhu3i'
+\mb cenoowouuhu                  - 3i'
+\ge IC.suffering ('not blessed') - 3PL
+\ps vai                          - infl
+
+\tx ci'            hiiwoonhehe'.
+\mb ci'            hiiwoonhehe'
+\ge too            now
+\ps proclitic/part part
+
+\ELANBegin 25.950
+\ELANEnd 30.000
+\ELANParticipant 6
+\ft Here are these [people] who are suffering today.
+\notes {Howouuhu 'blessed' > Coowouuhu- 'not blessed'; teco'on-owouuhu-t = 
+keeps suffering, not blessed; niico'on-owouunouhu-t}
+
+\ref 77b.006
+\tx Heesinihii3i',
+\mb heesi-      nihii - 3i'
+\ge what/how-   say   - 3PL
+\ps prefix.rel- vai   - infl
+
+\tx henee3neeni'i3ecoohei'ee3i'      niine'eeno'
+\mb henee3nee- ni'i3ecooh - ei'ee3i' niine'eeno'
+\ge IC.very-   make happy - 3PL/1PL  here are.3PL
+\ps prefix-    vta        - infl     pseudovai
+
+\tx nuhu' neniteeno',
+\mb nuhu' neniteeno'
+\ge this  people
+\ps det   na.pl
+
+\tx tohno'xootonei'ee3i'.
+\mb toh-    no'xooton                       - ei'ee3i'
+\ge since-  arrive where s.o. is by walking - 3PL/1PL
+\ps prefix- vta                             - infl
+
+\ELANBegin 31.070
+\ELANEnd 37.730
+\ELANParticipant 6
+\ft What they say is, these people have made us very happy, because they 
+have come here to join us.
+\notes
+
+\ref 77b.007
+\tx Niine'eehek neh'eeno, niine'eehek neh'eeno
+\mb niine'eehek neh'eeno  niine'eehek neh'eeno
+\ge here is.3S  this      here is.3S  this
+\ps pseudovai   det.EMPH  pseudovai   det.EMPH
+
+\tx hinen, wootii
+\mb hinen  wootii
+\ge man    like
+\ps na     part
+
+\tx nih'eeneiseeneine'etiit,
+\mb nih-    'eeneis-      eeneine'etii - t
+\ge PAST-   PERF-         live         - 3.S
+\ps prefix- prefix.REDUP- vai.REDUP    - infl
+
+\tx nih'eeneistoot.
+\mb nih-    'eeneis-          too - t
+\ge PAST-   what/how-         do  - 3.S
+\ps prefix- prefix.rel.REDUP- vai - infl
+
+\ELANBegin 38.590
+\ELANEnd 47.490
+\ELANParticipant 6
+\ft Here is this one, here is this man, the ways he lived his life, the 
+things he did.
+\notes Talking about the person who has died.
+
+\ref 77b.008
+\tx Wootii hinee cei3iihi',     heenoo     wootii
+\mb wootii hinee cei3-    iihi' heenoo     wootii
+\ge like   that  to here- ADV   oblig/rule like
+\ps part   det   prefix-  deriv part       part
+
+\tx nihP                hinono'ei.
+\mb nih-    P           hinono'ei
+\ge PAST-   pause/break Arapaho
+\ps prefix- P           na
+
+\ELANBegin 48.250
+\ELANEnd 52.640
+\ELANParticipant 6
+\ft All the way to this day, it was always in the customary Arapaho way.
+\notes
+
+\ref 77b.009
+\tx Wootii nih3oo3ookutiit
+\mb wootii nih-    3oo-    3ookutii    - t
+\ge like   PAST-   REDUP-  follow s.t. - 3.S
+\ps part   prefix- prefix- vai.t       - infl
+
+\tx nih'eenei3owoo'oono',
+\mb nih-    'eenei3-          owoo'oo          - no'
+\ge PAST-   how-              conduct ceremony - 12
+\ps prefix- prefix.rel.REDUP- vai              - infl
+
+\ELANBegin 53.350
+\ELANEnd 56.660
+\ELANParticipant 6
+\ft He followed the ways of our ceremonies,
+\notes
+
+\ref 77b.010
+\tx wo'ei3
+\mb wo'ei3
+\ge or
+\ps part
+
+\tx nih'eeneisoononowutoot.
+\mb nih-    'eeneis-      oon-    onowutoo        - t
+\ge PAST-   PERF-         REDUP-  have merry time - 3.S
+\ps prefix- prefix.REDUP- prefix- vai             - infl
+
+\ELANBegin 56.690
+\ELANEnd 58.340
+\ELANParticipant 6
+\ft And also in the ways he celebrated.
+\notes
+
+\ref 77b.011
+\tx Nih3ee3i'ookuuto'                          niiyou
+\mb nih-    3ee-    3i'ookuut           - o'   niiyou
+\ge PAST-   REDUP-  stand (for/with/at) - 3S   here it is
+\ps prefix- prefix- vti                 - infl pseudovii
+
+\tx nuh'uuno, nihnoonohkco'ooto'
+\mb nuh'uuno  nih-    noo-    nohkco'oot        - o'
+\ge this      PAST-   REDUP-  take part in s.t. - 3S
+\ps det.EMPH  prefix- prefix- vti               - infl
+
+\tx niiyou            nuh'uuno, heeneesoo',
+\mb niiyou            nuh'uuno  heeneesoo                - '
+\ge here it is        this      how things are           - 0S
+\ps pseudovii         det.EMPH  vii.rel.REDUP            - infl
+
+\tx nih'iisoo'        hinee hetiine'etiitoon-in.
+\mb nih-    'iisoo'   hinee het-  iine'etiitoon - in
+\ge PAST-   how it is that  2S-   life          - 12POSS
+\ps prefix- vii.rel   det   infl- ni+plposs     - infl
+
+\ELANBegin 58.770
+\ELANEnd 68.810
+\ELANParticipant 6
+\ft He stood for these things, he took part in these things, the ways our 
+of Arapaho life, of the present and the past.
+\notes
+
+\ref 77b.012
+\tx Noh  hiiwoonhehe', tohni'i3ecooni'
+\mb noh  hiiwoonhehe'  toh-    ni'i3ecoo - ni'
+\ge and  now           since-  be happy  - 1PL
+\ps part part          prefix- vai       - infl
+
+\tx toh'eentoonee.
+\mb toh-    'eentoo - nee
+\ge since-  be at   - 2PL
+\ps prefix- vai     - infl
+
+\ELANBegin 69.110
+\ELANEnd 72.530
+\ELANParticipant 6
+\ft And today, we are happy that you are present.
+\notes
+
+\ref 77b.013
+\tx niiyou            nuh'uuno ciiyoono,              woow
+\mb niiyou            nuh'uuno ciiyoo         - no    woow
+\ge here it is        this     gear/equipment - NI.PL now.PERF
+\ps pseudovii         det.EMPH ni             - infl  part
+
+\tx hoo'eiP                        hoo'einou'u.
+\mb hoo'ei-            P           hoo'ein   - ou'u
+\ge gathered together- pause/break gather up - 3PL
+\ps prefix-            P           vti       - infl
+
+\ELANBegin 72.930
+\ELANEnd 76.580
+\ELANParticipant 6
+\ft Here are these articles, they have gathered them here now.
+\notes {The term ciiyoono refers to things given away for a give-away 
+ceremony}
+
+\ref 77b.014
+\tx Niiyou            nuhu' ciiyoono,
+\mb niiyou            nuhu' ciiyoo         - no
+\ge here it is        this  gear/equipment - NI.PL
+\ps pseudovii         det   ni             - infl
+
+\tx heetne'ini             neeni'ii3eihi3i'.
+\mb heet-   ne'-    ini    nee-    ni'ii3eihi    - 3i'
+\ge FUT-    then-   DETACH REDUP-  called thusly - 3PL
+\ps prefix- prefix- deriv  prefix- vai.pass      - infl
+
+\ELANBegin 77.020
+\ELANEnd 80.050
+\ELANParticipant 6
+\ft Here are these articles, certain ones will be called out [to receive 
+them].
+\notes
+
+\ref 77b.015
+\tx 'oh     hoonoo3oo'o'uu,
+\mb 'oh     hoonoo3oo'o'uu
+\ge but/and (all of) some, others
+\ps part    pronoun.REDUP.pl
+
+\tx heettootou3e'eineihi3i'              niiyou            nuhu'
+\mb heet-   too-    tou3e'eineihi - 3i'  niiyou            nuhu'
+\ge FUT-    REDUP-  given gift    - 3PL  here it is        this
+\ps prefix- prefix- vai.PASS      - infl pseudovii         det
+
+\tx ciiyoono.
+\mb ciiyoo         - no
+\ge gear/equipment - NI.PL
+\ps ni             - infl
+
+\ELANBegin 80.060
+\ELANEnd 84.890
+\ELANParticipant 6
+\ft And the others present here will be presented with these articles.
+\notes
+
+\ref 77b.016
+\tx Niine'eehek nehe' hinen, heetih'ini,
+\mb niine'eehek nehe' hinen  heetih-  'ini
+\ge here is.3S  this  man    so that- DETACH
+\ps pseudovai   det   na     prefix-  deriv
+
+\tx heetih'ini      ce'iini    hinee tohP
+\mb heetih-  'ini   ce'iini    hinee toh-    P
+\ge so that- DETACH again      that  since-  pause/break
+\ps prefix-  deriv  prefix.det det   prefix- P
+
+\tx niitoh'oo'eixootiini',
+\mb niitoh-            'oo'eixootiini       - '
+\ge where-             there is a gathering - 0S
+\ps prefix.rel.IMPERF- vai.impers           - infl
+
+\ELANBegin 85.280
+\ELANEnd 92.710
+\ELANParticipant 6
+\ft here is this man, we ask that he once again be at the place of 
+gathering,
+\notes {i.e.  traditional heaven}
+
+\ref 77b.017
+\tx heetih'ini      ce'iini    cihnoohooto'
+\mb heetih-  'ini   ce'iini    cih-     noohoot - o'
+\ge so that- DETACH again      to here- see     - 3S
+\ps prefix-  deriv  prefix.det prefix-  vti     - infl
+
+\tx niiyou            nuh'uuno hiniito'eino,
+\mb niiyou            nuh'uuno hini- ito'ei     - no
+\ge here it is        this     3S-   relative   - OBV.PL
+\ps pseudovii         det.EMPH infl- na.oblposs - infl
+
+\tx niine'eeno        nuhu', nuhu' hitei'yooniiwo,
+\mb niine'eeno        nuhu'  nuhu' hi-   tei'yooniiwo
+\ge here they     are this   this  3S-   children
+\ps vai.pseudo.obv.pl det    det   infl- na.obv.pl.poss
+
+\tx hiniisiihoho,           heneibiini
+\mb hini- isiihoho          heneib-          iini
+\ge 3S-   grandchildren     great- relative- DETACH
+\ps infl- na.oblposs.obv.pl prefix-          deriv
+
+\tx hiniisiihoho,
+\mb hini- isiihoho
+\ge 3S-   grandchildren
+\ps infl- na.oblposs.obv.pl
+
+\ELANBegin 93.370
+\ELANEnd 102.730
+\ELANParticipant 6
+\ft so that he can look back upon his relations, here are his children, 
+his grandchildren, his great grandchildren,
+\notes {heneibiihi' = great granchildren}
+
+\ref 77b.018
+\tx heetneesiini,                     heetP
+\mb heet-   nees-              iini   heet-   P
+\ge FUT-    how/what-          DETACH FUT-    pause/break
+\ps prefix- prefix.rel.IMPERF- deriv  prefix- P
+
+\tx heetneesiini
+\mb heet-   nees-              iini
+\ge FUT-    how/what-          DETACH
+\ps prefix- prefix.rel.IMPERF- deriv
+
+\tx hoonowouuwu3i'                       hiiwoonhehe'.
+\mb hoonowouuwu                   - 3i'  hiiwoonhehe'
+\ge IC.feel physically happy/good - 3PL  now
+\ps vai                           - infl part
+
+\ELANBegin 103.210
+\ELANEnd 107.770
+\ELANParticipant 6
+\ft The way that they are feeling thankful today [towards others for 
+being here].
+\notes {honob-ouuw-u = joyous-physical feeling-AI}
+
+\ref 77b.019
+\tx Heetihnee'eesiini    niitP niiteheibeenowoonee.
+\mb heetih-  nee'eesiini       niiteheib - eenow      - oonee
+\ge so that- be thus           help      - think of   - 2PL/3
+\ps prefix-  vii.backref       vta       - vta        - infl
+
+\ELANBegin 108.190
+\ELANEnd 111.370
+\ELANParticipant 6
+\ft I ask that you remember to be helpful to them.
+\notes {lit. 'think about them in a helpful way, support them'}
+
+\ref 77b.020
+\tx Noh  heetP               noh  heetniini,
+\mb noh  heet-   P           noh  heetni- ini
+\ge and  FUT-    pause/break and  FUT-    DETACH
+\ps part prefix- P           part prefix- deriv
+
+\tx heet-nee'eeneesiini
+\mb heet-   nee'eeneesi-                   ini
+\ge FUT-    those are the ways/things-     DETACH
+\ps prefix- prefix.rel.REDUP-              deriv
+
+\tx neeni'i3ecooheinee,
+\mb nee-    ni'i3ecooh - einee
+\ge REDUP-  make happy - 3/2P
+\ps prefix- vta        - infl
+
+\ELANBegin 111.910
+\ELANEnd 117.940
+\ELANParticipant 6
+\ft And in the same way, they will make you happy [with their gifts],
+\notes
+
+\ref 77b.021
+\tx heetih'ini      niiP niiteheibeenowoonee.
+\mb heetih-  'ini        niiteheib - eenow      - oonee
+\ge so that- DETACH      help      - think of   - 2PL/3
+\ps prefix-  deriv       vta       - vta        - infl
+
+\ELANBegin 118.110
+\ELANEnd 121.620
+\ELANParticipant 6
+\ft I ask that you remember to be helpful to them.
+\notes
+
+
+\ELANMediaURL file:///G:/ELDP/77/77b.avi
+\ELANMediaMIME video/*
+\ELANMediaURL file:///G:/ELDP/77/77bAudio.wav
+\ELANMediaMIME audio/x-wav
