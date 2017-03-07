@@ -1,6 +1,2 @@
-# Set the path to where your lexicon file and text file are
-
 lexicon_path = ./data/arapaho_lexicon.json
-text_path = ./data/master_text.txt
-
-/Users/ajwieme/Desktop/adam-verbs-projects/All_Arapaho/arapaho/lexicon_data/arapaho_lexicon.json
+text_path    = ./data/77b.txt
