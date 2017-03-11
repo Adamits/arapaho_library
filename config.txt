@@ -1,2 +1,2 @@
-lexicon_path = # Put path to the lexicon JSON file here
-text_path    = # Put path to the text corpus .txt file here
+lexicon_path = ../Desktop/adam-verbs-projects/All_Arapaho/arapaho/lexicon_data/arapaho_lexicon.json
+text_path    = ./data/master_text.txt
