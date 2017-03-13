@@ -8,19 +8,11 @@ import re
 # Note that x= dict[key], where key points to another dict
 # seems to store a pointer to that dict in python, so updating
 # an attribute of a LexicalEntry SHOULD also update the json...
-
-# Path to arapaho_lexicon.json
-def get_text_directory():
-  for line in open('config.txt'):
-    if line.startswith('lexicon_path'):
-      return line.split('=')[1].strip()
-  exit('WARNING: could not find a value for lexicon_path')
-
 class JsonObject(object):
   def __init__(self, json_dict):
     self.json_dict = json_dict
 
-  def as_json_dict(self):
+  def json_format(self):
     return self.__dict__
 
 class ArapahoLexicalParser(JsonObject):
@@ -28,8 +20,8 @@ class ArapahoLexicalParser(JsonObject):
     self.lexical_entries = []
     self.json_dict = {}
 
-  def parse(self):
-    with open(get_text_directory()) as data_file:
+  def parse(self, lexicon_path):
+    with open(lexicon_path) as data_file:
       arapaho_json = json.load(data_file)
       self.json_dict = arapaho_json
 
@@ -38,10 +30,16 @@ class ArapahoLexicalParser(JsonObject):
       lexical_entry = LexicalEntry({lex_id: lex_entry})
       self.lexical_entries.append(lexical_entry)
 
+  # Note that this queries the json read in by the parser
+  # Which means that after entries are updated, this will still be querying the
+  # JSON originally fed into the parser until the json_dict attribute is updated.
   def where(self, query_string):
     # Need to copy the json in order to modify so that we can do a little
     # hack in order to solve the issue that object path does not return the key,
     # which is the lex_id for us.
+    # TODO figure out a way to still point to the original json_dict,
+    # TODO so that we can update the json that will ultimately write to a file
+    # TODO without adding new lex_id keys for the hack explained above.
     query_json = self.json_dict.copy()
     # Add lex_id as a key in the dict so that it can be added back
     # as the highest level key so that instantiation of LexicalEntry objects will work.
@@ -61,10 +59,10 @@ class ArapahoLexicalParser(JsonObject):
 
     return lex_entries
 
-  def as_json_dict(self):
+  def json_format(self):
     formatted_dict = {}
     for entry in self.lexical_entries:
-      formatted_dict.update(entry.as_json_dict())
+      formatted_dict.update(entry.json_format())
 
     return formatted_dict
 
@@ -173,26 +171,26 @@ class LexicalEntry(JsonObject):
 
   def contains_example(self, input_example):
     for example in self.examples:
-      if input_example.as_json_dict() == example.as_json_dict():
+      if set(input_example.json_format()) == set(example.json_format()):
         return True
 
-  def as_json_dict(self):
+  def add_example(self, input_example):
+    self.examples.append(input_example)
+    self._increment_example_frequency()
+
+  def _increment_example_frequency(self):
+    self.examplefrequency += 1
+
+  def json_format(self):
     formatted_dict = self.__dict__.copy()
     formatted_dict.pop("json_dict")
 
     for key, val in formatted_dict.items():
       if isinstance(val, list) and len(val) > 0:
         if isinstance(val[0], JsonObject):
-          formatted_dict[key] = [obj.as_json_dict() for obj in formatted_dict[key]]
+          formatted_dict[key] = [obj.json_format() for obj in formatted_dict[key]]
 
     return {formatted_dict.pop("lex_id"): formatted_dict}
-
-#  def as_json_dict(self):
-#    nested_dict = self.__dict__
-#    for key, val in nested_dict:
-#
-#    {self.lex_id: {}}
-
 
 # def add_example(self, options={}):
 
@@ -203,7 +201,7 @@ class Derivation(JsonObject):
     self.type = self.json_dict.keys()[0]  # Always only one type per derivation
     self.value = self.json_dict[self.type]
 
-  def as_json_dict(self):
+  def json_format(self):
     formatted_dict = self.__dict__.copy()
     formatted_dict.pop("json_dict")
 
@@ -223,11 +221,11 @@ class Sense(JsonObject):
     self.note = self.json_dict.get("note")
     self.example = self.json_dict.get("example")
 
-  def as_json_dict(self):
+  def json_format(self):
     formatted_dict = self.__dict__.copy()
     formatted_dict.pop("json_dict")
     for key in formatted_dict.keys():
-      if formatted_dict[key] == None:
+      if formatted_dict[key] == None or formatted_dict[key] == "":
         formatted_dict.pop(key)
 
     return formatted_dict
@@ -243,7 +241,7 @@ class Example(JsonObject):
     self.ps = self.json_list[4]
     self.ft = self.json_list[5]
 
-  def as_json_dict(self):
+  def json_format(self):
     return [self.ref, self.tx, self.mb, self.ge, self.ps, self.ft]
 
 

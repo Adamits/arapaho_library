@@ -8,22 +8,15 @@ import codecs
 # seems to store a pointer to that dict in python, so updating
 # an attribute of a LexicalEntry SHOULD also update the json...
 
-# Path to arapaho_lexicon.json
-def get_lexicon_directory():
-  for line in open('config.txt'):
-    if line.startswith('text_path'):
-      return line.split('=')[1].strip()
-  exit('WARNING: could not find a value for text_path')
-
 class ArapahoTextParser(object):
   def __init__(self):
     self.examples          = []
     self.refs              = []
     self.refs_and_examples = {}
 
-  def parse(self):
+  def parse(self, text_path):
     # Get all lines from text, removing trailing whitespace
-    lines = [line.strip() for line in codecs.open(get_lexicon_directory(), encoding='latin-1')]
+    lines = [line.strip() for line in codecs.open(text_path, encoding='latin-1')]
 
     current_ref = ""
     for line_index, line in enumerate(lines):
