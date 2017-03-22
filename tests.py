@@ -1,12 +1,19 @@
-import json
-from Lexicon import *
-from Text import *
+# -*- coding: utf-8 -*-
+
+from lexicon import *
+from corpus import *
 
 text = Text()
-lexical_parser = ArapahoLexicalParser()
+lexical_parser = Lexicon()
 
-text.parse("./data/test_text.txt")
-lexical_parser.parse("./data/arapaho_lexicon.json")
+text.parse("./data/77b.txt")
+lexical_parser.parse("./data/small_test_lexicon.json")
+
+print len(lexical_parser.lexical_entries)
+print len(text.examples)
+test_example = text.where({"ref" : "77b.008"})[0]
+print test_example.json_format()
+print test_example.get_mb_list()
 
 def validate_matches():
   entries = lexical_parser.lexical_entries
@@ -27,6 +34,7 @@ def write_small_lexicon():
     # List comprehension to get all text_examples of any lex OR allolexeme in the entry that match its pos
     match_examples = [text_example for match_tuple in match_tuples for text_example in
                       mb_ps_tuples_and_examples[match_tuple]]
+    entry.remove_examples()
     # Increment total examples for logging
     # Loop over the examples that have this morpheme
     for match_example in match_examples:
@@ -42,8 +50,9 @@ def write_small_lexicon():
         entry.examplefrequency += entry.frequency_in_example_morphemes(match_example.get_mb_list())
         small_json_dict.update(entry.json_format())
 
-    with open("./data/small_test_lexicon.json", 'w') as outfile:
-     json.dump(small_json_dict, outfile)
+  print "DUMP DAT DATA!"
+  with open("./data/small_test_lexicon.json", 'w') as outfile:
+   json.dump(small_json_dict, outfile)
 
 KEYNOTFOUND = '<KEYNOTFOUND>'       # KeyNotFound for dictDiff
 
@@ -102,6 +111,6 @@ def is_adding_duplicates():
           # Increment examplefrequency
           entry.examplefrequency += 1
 
-write_small_lexicon()
+#write_small_lexicon()
 #is_adding_duplicates()
 # print len(lexical_parser.where("examplefrequency > 100"))

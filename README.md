@@ -2,6 +2,12 @@
 
 Library for interfacing with Arapaho Lexicon and IGT at CU Boulder
 
+Probably useful to:
+
+```
+$ pip install -r requirements.txt
+```
+
 To instantiate a list of lexical entry objects:
 ```
 from arapaholexicalparser import *
