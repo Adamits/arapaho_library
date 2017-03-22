@@ -14,6 +14,7 @@ class Text(object):
     self.refs              = []
     self.refs_and_examples = {}
 
+  # For parsing the igt txt files that seem to be an output of toolbox
   def parse(self, text_path):
     # Get all lines from text, removing trailing whitespace
     lines = [line.strip() for line in codecs.open(text_path, encoding='latin-1')]
@@ -36,33 +37,31 @@ class Text(object):
           current_ref_dict["ft"][-1] += " %s" % line
 
       if re.match(r'\\ref', line):
-        # When we hit a new ref, we need to store all of the examples that are within that ref
+        # When we hit a new ref, we need to store all of the data within that ref
+        # I.e. before the next \ref, as a new TextExample
         if current_ref != "":
-          # Loop over all lines under this ref, assume that if there is no tx,
-          # then we do not need to instantiate it as an example.
-          # Basically, len(current_ref_dict["tx"]) should = the number of examples from this ref
-          for i in range(len(current_ref_dict["tx"])):
-            text_example = TextExample()
-            text_example.ref = current_ref
-            if len(current_ref_dict["tx"]) > i:
-              text_example.tx = current_ref_dict["tx"][i]
-            if len(current_ref_dict["mb"]) > i:
-              text_example.mb = current_ref_dict["mb"][i]
-            if len(current_ref_dict["ge"]) > i:
-              text_example.ge = current_ref_dict["ge"][i]
-            if len(current_ref_dict["ps"]) > i:
-              text_example.ps = current_ref_dict["ps"][i]
-            if len(current_ref_dict["ft"]) > i:
-              text_example.ft = current_ref_dict["ft"][i]
-            # If we do not have an ft for this index, then use the last one of the ft slot.
-            # It seems that the glosses in a ref should all be pointing to the same ft, but
-            # we will check index and if not do last ft just to be safe.
-            elif len(current_ref_dict["ft"]) > 0:
-              text_example.ft = current_ref_dict["ft"][-1]
-            # Double check if there was actually example data in the example_block, or just noise
-            if text_example.contains_data():
-              self.examples.append(text_example)
-              self.refs_and_examples[text_example.ref].append(text_example)
+          # Instantiate TextExample with the current_ref
+          text_example = TextExample()
+          text_example.ref = current_ref
+
+          # Add all of the lines of info to the TextExample.
+          # Only set a value for the TextExample if there data to add
+          if len(current_ref_dict["tx"]) > 0:
+            text_example.tx = ' '.join(current_ref_dict["tx"])
+          if len(current_ref_dict["mb"]) > 0:
+            text_example.mb = ' '.join(current_ref_dict["mb"])
+          if len(current_ref_dict["ge"]) > 0:
+            text_example.ge = ' '.join(current_ref_dict["ge"])
+          if len(current_ref_dict["ps"]) > 0:
+            text_example.ps = ' '.join(current_ref_dict["ps"])
+          if len(current_ref_dict["ft"]) > 0:
+            text_example.ft = ' '.join(current_ref_dict["ft"])
+
+          # Double check if there was actually example data in the example_block, or just noise
+          # then add it to the list
+          if text_example.contains_data():
+            self.examples.append(text_example)
+            self.refs_and_examples[text_example.ref].append(text_example)
 
         # Store the value of the ref, and remove trailing whitespace
         current_ref = re.split(r'\\ref', line)[1].strip()
@@ -106,10 +105,16 @@ class Text(object):
   def refs(self):
     return[text_example.ref for text_example in self.examples]
 
-  def to_json(self):
-    return json.dumps(text_example.json() for text_example in self.examples)
+  def examples_as_dicts(self):
+    return [example.__dict__ for example in self.examples]
 
-    return all_data_dict
+  def json_format(self):
+    formatted_dict = {}
+
+    for text_example in self.examples:
+      formatted_dict.update(text_example.json_format())
+
+    return formatted_dict
 
 class TextExample(object):
 
@@ -120,6 +125,7 @@ class TextExample(object):
     self.ge = options.get("ge", "")
     self.ps = options.get("ps", "")
     self.ft = options.get("ft", "")
+    self.id = options.get("_id", "")
 
   def list(self):
     return [self.ref, self.tx, self.mb, self.ge, self.ps, self.ft]
@@ -173,6 +179,10 @@ class TextExample(object):
 
   def mb_and_ps_tuples(self):
     return zip(self.get_mb_list(), self.get_ps_list())
+
+  def json_format(self):
+    formatted_dict = self.__dict__.copy()
+    return {formatted_dict.pop("ref"): formatted_dict}
 
 
 def run_test():

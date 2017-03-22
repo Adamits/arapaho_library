@@ -54,4 +54,4 @@ print "%d frequencies of examples in lexicon after additions" % sum([entry.examp
 print "%d # of entries" % len(lexical_parser.lexical_entries)
 
 with open("./data/new_arapaho_lexicon.json", 'w') as outfile:
-  json.dump(lexical_parser.json_format(), outfile)
+  json.dump(lexicon.json_format(), outfile)
