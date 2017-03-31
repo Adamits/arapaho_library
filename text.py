@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
-import json
-from time import strftime
-import re
-import codecs
+from lexicon import *
+import collections
 
 # Note that x= dict[key], where key points to another dict
 # seems to store a pointer to that dict in python, so updating
@@ -17,7 +15,7 @@ class Text(object):
   # For parsing the igt txt files that seem to be an output of toolbox
   def parse(self, text_path):
     # Get all lines from text, removing trailing whitespace
-    lines = [line.strip() for line in codecs.open(text_path, encoding='latin-1')]
+    lines = [line.strip() for line in codecs.open(text_path, encoding="Latin-1")]
 
     current_ref = ""
     for line_index, line in enumerate(lines):
@@ -87,7 +85,7 @@ class Text(object):
   def where(self, query_dict):
     match_examples = []
     for example in self.examples:
-      example_dict = example.__dict__
+      example_dict = example.__dict__.copy()
       # Check if the query dict is in the example_dict
       if set(query_dict.items()).issubset(set(example_dict.items())):
         match_examples.append(example)
@@ -106,7 +104,14 @@ class Text(object):
     return[text_example.ref for text_example in self.examples]
 
   def examples_as_dicts(self):
-    return [example.__dict__ for example in self.examples]
+    return [example.dict_with_segmentation() for example in self.examples]
+
+  def write(self, filename):
+    with open(filename, 'w') as outfile:
+      outfile.write('\n\n'.join([example.write_string() for example in self.examples]))
+
+  #def concordance(self, input_lex, input_pos, window=5):
+
 
   def json_format(self):
     formatted_dict = {}
@@ -145,9 +150,12 @@ class TextExample(object):
     mb_string = self.mb
     mb = re.split(r'\s+', mb_string)
     if '-' in mb:
-      k = mb.index('-')
-      mb[k - 1] = mb[k - 1].replace(mb[k - 1], mb[k - 1] + '-')
-      if '-' in mb: mb.remove('-')
+      indices = [i for i, x in enumerate(mb) if x == '-']
+      for k in indices:
+        mb[k - 1] = mb[k - 1].replace(mb[k - 1], mb[k - 1] + '-')
+
+      if '-' in mb:
+        mb = [x for x in mb if x != '-']
 
       mb_string = '  '.join(mb)
 
@@ -157,7 +165,6 @@ class TextExample(object):
       mb_list.remove('')
     if ' ' in mb_list:
       mb_list.remove(' ')
-
     return mb_list
 
   def get_ps_list(self):
@@ -167,22 +174,64 @@ class TextExample(object):
     clean_pos_list = []
     # Remove - and lowercase to match on lexical entries
     for pos in re.split(r'\s+', pos_string):
-      clean_pos = pos.replace("-", "")
+      clean_pos = pos.replace("-", '')
       clean_pos_list.append(clean_pos)
 
     if '' in clean_pos_list:
-      clean_pos_list.remove('')
+      clean_pos_list = [x for x in clean_pos_list if x != '']
     if ' ' in clean_pos_list:
-      clean_pos_list.remove(' ')
+      clean_pos_list = [x for x in clean_pos_list if x != ' ']
 
     return clean_pos_list
+
+  def get_ge_list(self):
+    mb_list = self.get_mb_list()
+    target_length = len(mb_list)
+    # Remove the space delimited '-' and put it in the list index
+    # With the preceding string
+    ge_string = self.ge
+    clean_ge_list = []
+    # Remove - and lowercase to match on lexical entries
+    for ge in re.split(r'\s+', ge_string):
+      clean_ge = ge.replace("-", "")
+      clean_ge_list.append(clean_ge)
+
+    if '' in clean_ge_list:
+      clean_ge_list.remove('')
+    if ' ' in clean_ge_list:
+      clean_ge_list.remove(' ')
+
+    return clean_ge_list
 
   def mb_and_ps_tuples(self):
     return zip(self.get_mb_list(), self.get_ps_list())
 
+  def get_segments(self):
+    return [Segment(mb_and_ps_tup) for mb_and_ps_tup in self.mb_and_ps_tuples()]
+
+  def dict_with_segmentation(self):
+    formatted_dict = self.__dict__.copy()
+    formatted_dict.update({"mb_list": self.get_mb_list(), "ps_list": self.get_ps_list(), "ge_list": self.get_ge_list()})
+
+    formatted_dict.update({"segments": []})
+    for seg in self.get_segments():
+      formatted_dict["segments"].append(seg.__dict__)
+
+    return formatted_dict
+
+  def write_string(self):
+    return '\n'.join(["\%s %s" % (key, self.__dict__[key]) for key in ["ref", "tx", "mb", "ge", "ps", "ft"]])
+
   def json_format(self):
     formatted_dict = self.__dict__.copy()
     return {formatted_dict.pop("ref"): formatted_dict}
+
+
+class Segment(object):
+
+  def __init__(self, mb_ps_tup=()):
+    self.morpheme = mb_ps_tup[0]
+    self.pos = mb_ps_tup[1]
 
 
 def run_test():

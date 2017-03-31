@@ -2,24 +2,48 @@
 
 from lexicon import *
 from corpus import *
+from analyzer import *
 
 text = Text()
-lexical_parser = Lexicon()
+lexicon = Lexicon()
 
-text.parse("./data/77b.txt")
-lexical_parser.parse("./data/small_test_lexicon.json")
+#text.parse("./data/master_text.txt")
+#lexicon.parse("./data/arapaho_lexicon.json")
 
-print len(lexical_parser.lexical_entries)
-print len(text.examples)
-test_example = text.where({"ref" : "77b.008"})[0]
-print test_example.json_format()
-print test_example.get_mb_list()
+
+# print "%d  of %d examples cannot align gloss, %d percent of examples" % (len(alignment_issues), len(text.examples), float(len(alignment_issues)) / float(len(text.examples)))
+# with open("../Desktop/alignment_issues.txt", "w") as out:
+# out.write('\n\n'.join(alignment_issues).encode('utf-8').strip())
+
+corpus = Corpus()
+
+#corpus.collection.remove()
+
+#corpus.add_entries(text.examples_as_dicts())
+
+exact_matches_list = ["na", "ni", "vai", "vai.o", "vai.t", "vii", "vii.impers", "vti", "vta"]
+
+regex = re.compile(r"\bvai\b")
+analyzer = Analyzer(corpus)
+analyzer.pos_counts_regex(regex)
+
+for exact_match in exact_matches_list:
+  analyzer.pos_counts_exact(exact_match)
+
+analyzer.write("./data/analysis.txt")
+
+def compare_glosses():
+  vtis = lexicon.where("pos is vti")
+
+  for vti in vtis:
+    return vti
 
 def validate_matches():
-  entries = lexical_parser.lexical_entries
+  entries = lexicon.lexical_entries
   for entry in entries:
-    #entry.get_matching_lexeme_pos_tuples_from()
+    # entry.get_matching_lexeme_pos_tuples_from()
     return ""
+
 
 def write_small_lexicon():
   small_json_dict = {}
@@ -28,7 +52,7 @@ def write_small_lexicon():
   mb_ps_tuples = mb_ps_tuples_and_examples.keys()
 
   # TODO OPTIMIZE THIS BAD BOY
-  for entry in lexical_parser.lexical_entries:
+  for entry in lexicon.lexical_entries:
     # Get the examples that have a morpheme (mb) and the pos (ps) of this entry
     match_tuples = entry.get_matching_lexeme_pos_tuples_from(mb_ps_tuples)
     # List comprehension to get all text_examples of any lex OR allolexeme in the entry that match its pos
@@ -52,49 +76,54 @@ def write_small_lexicon():
 
   print "DUMP DAT DATA!"
   with open("./data/small_test_lexicon.json", 'w') as outfile:
-   json.dump(small_json_dict, outfile)
+    json.dump(small_json_dict, outfile)
 
-KEYNOTFOUND = '<KEYNOTFOUND>'       # KeyNotFound for dictDiff
+
+KEYNOTFOUND = '<KEYNOTFOUND>'  # KeyNotFound for dictDiff
+
 
 def dict_diff(first, second):
-    """ Return a dict of keys that differ with another config object.  If a value is
-        not found in one fo the configs, it will be represented by KEYNOTFOUND.
-        @param first:   Fist dictionary to diff.
-        @param second:  Second dicationary to diff.
-        @return diff:   Dict of Key => (first.val, second.val)
-    """
-    diff = {}
-    # Check all keys in first dict
-    for key in first.keys():
-        if (not second.has_key(key)):
-            diff[key] = (first[key], KEYNOTFOUND)
-        elif (first[key] != second[key]):
-            diff[key] = (first[key], second[key])
-    # Check all keys in second dict to find missing
-    for key in second.keys():
-        if (not first.has_key(key)):
-            diff[key] = (KEYNOTFOUND, second[key])
-    return diff
+  """ Return a dict of keys that differ with another config object.  If a value is
+      not found in one fo the configs, it will be represented by KEYNOTFOUND.
+      @param first:   Fist dictionary to diff.
+      @param second:  Second dicationary to diff.
+      @return diff:   Dict of Key => (first.val, second.val)
+  """
+  diff = {}
+  # Check all keys in first dict
+  for key in first.keys():
+    if (not second.has_key(key)):
+      diff[key] = (first[key], KEYNOTFOUND)
+    elif (first[key] != second[key]):
+      diff[key] = (first[key], second[key])
+  # Check all keys in second dict to find missing
+  for key in second.keys():
+    if (not first.has_key(key)):
+      diff[key] = (KEYNOTFOUND, second[key])
+  return diff
 
-#print "%d entries in lexicon" % len(lexical_parser.lexical_entries)
-#print "%d examples in lexicon" % sum([len(entry.examples) for entry in lexical_parser.where("examplefrequency > 0")])
 
-#print "%d unique lexemes in text" % len(set(list(itertools.chain.from_iterable(mb_lists))))
+# print "%d entries in lexicon" % len(lexicon.lexical_entries)
+# print "%d examples in lexicon" % sum([len(entry.examples) for entry in lexicon.where("examplefrequency > 0")])
 
-#print "%d examples in text" %  len(text.examples)
+# print "%d unique lexemes in text" % len(set(list(itertools.chain.from_iterable(mb_lists))))
+
+# print "%d examples in text" %  len(text.examples)
 
 def find_duplicates():
   return True
 
+
 def json_format_test():
-  entry = lexical_parser.lexical_entries[0]
+  entry = lexicon.lexical_entries[0]
   print entry.examples[0].ft
   return entry.json_format()
+
 
 def is_adding_duplicates():
   mbs_and_examples = text.mbs_and_examples()
   mbs = mbs_and_examples.keys()
-  for entry in lexical_parser.lexical_entries:
+  for entry in lexicon.lexical_entries:
     # If this entry appears in the example morphemes
     match = entry.appears_in(mbs)
     if match:
@@ -102,7 +131,7 @@ def is_adding_duplicates():
       match_examples = mbs_and_examples[match]
       # Loop over the examples that have this morpheme
       for match_example in match_examples:
-        # Generate an Example Object that goes into th elexicon (probably need to namespace this)
+        # Generate an Example Object that goes into the lexicon (probably need to namespace this)
         lex_example = Example(match_example.list())
         # Check if that example is in the lexical entry object already
         if not entry.contains_example(lex_example):
@@ -111,6 +140,6 @@ def is_adding_duplicates():
           # Increment examplefrequency
           entry.examplefrequency += 1
 
-#write_small_lexicon()
-#is_adding_duplicates()
-# print len(lexical_parser.where("examplefrequency > 100"))
+          # write_small_lexicon()
+          # is_adding_duplicates()
+          # print len(lexicon.where("examplefrequency > 100"))

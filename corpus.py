@@ -9,10 +9,10 @@ class Corpus(object):
   def __init__(self, corpus_name='text_corpus'):
     self.db = db
     self.collections = db.showCollections
-    self.corpus = db[corpus_name]
+    self.collection = db[corpus_name]
 
   def add_entries(self, text_example_dicts=[]):
-    self.corpus.insert_many(text_example_dicts)
+    self.collection.insert_many(text_example_dicts)
 
   # More intuitive method wrapped over get_cursor
   # Returns a list of TextExamples, implemented in this library
@@ -28,7 +28,7 @@ class Corpus(object):
   # cursor is mongos record set, which is an iterable object of
   # multiple documents. Kind of like SSQL records
   def get_cursor(self, args={}):
-    return self.corpus.find(args)
+    return self.collection.find(args)
 
 def run_test():
   arapaho_corpus = Corpus()

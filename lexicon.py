@@ -13,10 +13,10 @@ class JsonObject(object):
   def json_format(self):
     return self.__dict__
 
-
 class Lexicon(JsonObject):
   def __init__(self):
     self.lexical_entries = []
+    self.lexes_and_lexical_entries = {}
     self.json_dict = {}
 
   def parse(self, lexicon_path):
@@ -27,7 +27,14 @@ class Lexicon(JsonObject):
     for lex_id, lex_entry in arapaho_json.items():
       # Instantiate a lexical entry of all the json at this lex_id
       lexical_entry = LexicalEntry({lex_id: lex_entry})
+      # Add lex/allolex as keys and/or append entry to that key
+      self.lexes_and_lexical_entries.setdefault(lexical_entry.lex, []).append(lexical_entry)
+      for allolex in lexical_entry.allolexemes:
+        self.lexes_and_lexical_entries.setdefault(allolex, []).append(lexical_entry)
       self.lexical_entries.append(lexical_entry)
+
+  def find_by_lex(self, lex):
+    return self.lexes_and_lexical_entries.get(lex, [])
 
   # Note that this queries the json read in by the parser
   # Which means that after entries are updated, this will still be querying the
@@ -192,7 +199,7 @@ class LexicalEntry(JsonObject):
 
   # Returns a list of (ps, mb) tuples from the list of
   # (ps, mb) tuples that this entry appears in
-  def get_matching_lexeme_pos_tuples_from(self, comparison_list=[]):
+  def get_match_from(self, comparison_list=[]):
     matching_lexemes = []
 
     for lexeme in self.lex_and_allolex_list():
