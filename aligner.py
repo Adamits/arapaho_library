@@ -32,19 +32,31 @@ class Aligner(object):
             for entry in self.lexicon.find_by_lex(mb_ps[0]):
               # Check that the pos matches too
               if entry.pos == mb_ps[1]:
-                # Get th number of tokens in the leixcal entry's gloss
-                gloss_length = len(re.split(r'\s+', entry.gloss))
+                #TODO so now we have a mb/ps match from the lexicon that appears in this
+                #TODO example, which has misaligned gloss and mb. We need to look at
+                #TODO potential window sizes for the gloss and determine how likely it is that
+                #TODO that n-tokens comprise the gloss for the mb
+
+                # Possibly use viterbi with some English gloss stats?
+                # Possibly use some type of structured prediction?
+                # Possibly use Text similarity between lexical gloss and usage based gloss?
+                # Issue of wanting to know all possibilities of an mb/ps in the corpus
+                # in order to determine likelihood that a series of tokens comprises a gloss, vs
+                # needing good alignment in order to get this list.
+
+                # Get the number of tokens in the leixcal entry's gloss
+                ### gloss_length = len(re.split(r'\s+', entry.gloss))
                 # If its >1, it needs to be annotated differently for realignment
-                if gloss_length > 1:
+                ### if gloss_length > 1:
                   # Get a string starting at the mb-aligned gloss, of length n where n is the
                   # length of the entry gloss
-                  aligned_gloss = ' '.join(ge_list[mb_index:mb_index + gloss_length])
+                  ### aligned_gloss = ' '.join(ge_list[mb_index:mb_index + gloss_length])
                   # If this matches the entry gloss, then:
                   # A: this instance of the mb must be a reference to the lexical entry and
                   # B: aligned_gloss must be the full gloss of this mb, and therefore we can
                   # change it to be (.) delimited rather than space delimited.
-                  if aligned_gloss == entry.gloss:
-                    # change the ge so that all isntances of aligned gloss are replaced by (.) delimited version
+                  ### if aligned_gloss == entry.gloss:
+                    # change the ge so that all instances of aligned gloss are replaced by (.) delimited version
                     # of aligned_gloss
                     text_example.ge = text_example.ge.replace(aligned_gloss, '.'.join(re.split(r'\s+', aligned_gloss)))
                   else:

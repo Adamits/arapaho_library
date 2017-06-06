@@ -9,6 +9,6 @@ from text import *
 
 def add_text_to_corpus(text=Text()):
   corpus = Corpus()
-  corpus.add_entries([example.__dict__ for example in text.examples])
+  corpus.add_entries(text.examples_as_dicts())
 
   return corpus

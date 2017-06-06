@@ -1,0 +1,827 @@
+FORMAT OF:
+ pos: frequency
+	 most_frequent_morpheme for that pos: frequency of instances of morpheme with that pos
+
+
+vii: 7736
+	nenee': 668
+
+vii.impers: 769
+	iine'etiitooni-: 35
+
+vii.IMPERS: 608
+	ceh'e3tiitooni-: 12
+
+vii.rel: 561
+	nee'eesoo': 191
+
+vii.pass: 351
+	ni'ii3eihiinoo-: 37
+
+vii.back: 285
+	nee'eesoo-: 163
+
+vii+pl/iter: 282
+	woo3ei-: 19
+
+vii.ITER: 258
+	he'iitnei'i: 96
+
+vii+pl: 223
+	cee'ei-: 39
+
+vii.pass.imperf: 215
+	niiboohu-: 15
+
+vii.PASS.IMPERF: 210
+	ciineni-: 8
+
+vii.PASS: 181
+	noohobeihiinoo-: 20
+
+ni/vii: 155
+	tih'iisiini': 26
+
+vii.backref: 153
+	nee'eesiini: 104
+
+vii.INTERR: 141
+	tousihi': 63
+
+vii.pl: 114
+	wonoo3ei'i: 49
+
+deriv.vii: 92
+	eihiinoo': 59
+
+vii.rel.REDUP: 75
+	heeneisoo': 25
+
+vii.incorp: 74
+	tonoxteeni-: 4
+
+vii.impers.interr: 67
+	tousinihiitoon: 65
+
+vii.pl/iter: 52
+	woo3ei-: 11
+
+vii.interr: 45
+	tousihi': 23
+
+vii.REDUP.REL: 38
+	'eeneisoo-: 31
+
+vii.REL: 34
+	'ii3ouh'u-: 5
+
+vii.IMPERF: 33
+	niiyohou-: 5
+
+vii.redup: 31
+	heeneestootiini-: 7
+
+vii.rel+pl: 31
+	heesou'-: 16
+
+vii.rel.redup: 30
+	heeneisoo-: 21
+
+vii.IMPERS.REDUP: 27
+	booboo3etiitooni-: 7
+
+vii.impers(alt.): 26
+	niiteheibeenebiitooni: 6
+
+vii.INCORP: 26
+	ceeneeteenoowu-: 3
+
+vii.REDUP: 24
+	'eeneisooni-: 3
+
+vii.back.impers: 24
+	nee'eestootiini: 19
+
+vii.PASS+pl/iter: 23
+	ciineneihiinou-: 3
+
+vii.pass+PL: 23
+	tonouneihiinou-: 19
+
+vii.pass+pl/iter: 22
+	niitoneihiinou-: 3
+
+vii.NEG: 21
+	ceentou-: 7
+
+vii.dim: 20
+	hookecouhu-: 3
+
+vii.BACK.REDUP: 19
+	nee'eeneesoo-: 18
+
+vii.pass.back: 17
+	nee'eesih'iinoo-: 15
+
+vii.impers.incorp: 17
+	neetoto'niitooni-: 3
+
+ni/vii.pl: 15
+	nii3konoo3einou'u: 4
+
+vii.DIM: 14
+	to'eihi-: 2
+
+vii.REL+pl/iter: 13
+	iisou-: 5
+
+vii.neg: 12
+	hoowouuneenoo: 6
+
+vii.IMPERS.INCORP: 12
+	se'esoonootiini-: 2
+
+vii.REL.REDUP: 11
+	heenei'oxoo-: 2
+
+vii.impers.redup: 11
+	'eeneistootiini-: 4
+
+vii+PL: 10
+	yeinei-: 5
+
+ni/vii.rel: 10
+	hee3ei'oo': 8
+
+vii.rel+pl/iter: 10
+	heetoxei-: 5
+
+vii.IMPERS.REDUP.IMPERF: 10
+	neeneistootiini-: 5
+
+vii.past: 10
+	hiisoo-: 7
+
+vii.pass.imperf.rel: 10
+	heesih'i-: 7
+
+vii.impers.back: 9
+	nee'eesinihiitooni: 4
+
+vii.rel.IMPERF: 9
+	niitou': 2
+
+vii.impers.rel: 9
+	heestootiini-: 3
+
+vii.pseudov: 8
+	heeyounii: 8
+
+vii.REDUP.IMPERF: 8
+	neeneihko'use-: 2
+
+vii.REL.REDUP.IMPERF: 8
+	neenei3oo-: 3
+
+vii.REL.IMPERF: 8
+	niisoowu-: 6
+
+vii.NEG.pass: 8
+	ciiteneihiinoo-: 6
+
+vii.REDUP+pl/iter: 7
+	heeneecxooyei'ou-: 3
+
+vii.BACKREF: 7
+	nee'ee3ouh'u-: 2
+
+vii(?): 7
+	heeneetoon-: 2
+
+vii.imperf: 7
+	neesiinii-: 2
+
+vii.IMPERS.IMPERF: 6
+	nesnootiini-: 1
+
+vii.neg.pass: 6
+	ciiteneihiinoo-: 6
+
+vii.impers.NEG: 6
+	hoowoe'iyootiini: 2
+
+vii.BACKREF.REDUP: 6
+	nee'eeneesoo: 2
+
+vii.pass.IMPERF: 6
+	neibini-: 2
+
+vii.IMPERS.incorp: 6
+	inono'eitiitooni: 2
+
+vii.pass.NEG: 6
+	hoowoe'inoneihiinoo: 5
+
+vii(sp?): 5
+	no'oute-: 2
+
+vii.rel.redup.imperf: 5
+	neenei3einooni-: 2
+
+vii.IMPERF+pl/iter: 5
+	yeah: 1
+
+vii.rel.imper: 5
+	niisiini: 4
+
+vii.PASS.: 4
+	eniheihiinoo-: 2
+
+vii.pass.imperf.back: 4
+	nee'eesih'i-: 3
+
+vii.REDUP.IMPERS: 4
+	eeneistootiini-: 2
+
+vii.REL.REDUP.PASS.IMPERF: 4
+	'eeneisei3i: 1
+
+vii.IMPERS.REL: 4
+	hee3e'eixootiini-: 2
+
+vii.rel.imperf: 4
+	niisooni-: 1
+
+vii+ITER: 4
+	hii3ou'ou-: 2
+
+vii/ni: 4
+	coowooceiise': 1
+
+vii.redup+pl/iter: 4
+	neenei3oo'ou-: 2
+
+vii.back+pl: 3
+	nee'eesou-: 2
+
+vii.IMPERS.BACKREF: 3
+	nee'eesih'iitooni-: 3
+
+ni/vii+pl: 3
+	tecinihii-: 1
+
+vii.impers.rel.imperf: 3
+	nii3ohwootiini-: 2
+
+vii.rel.pass.imperf: 3
+	'iisih'i-: 2
+
+vii.MPERS: 3
+	heneenetiitooni-: 3
+
+vii.impers.REDUP.REL: 3
+	heeneistootiini-: 3
+
+vii.pl.REDUP: 3
+	ceeceibecei'inou'u: 3
+
+vii.rel.REDUP+pl: 3
+	heeneisou'-: 2
+
+vii.pass.imper: 3
+	ciinohu: 2
+
+vii.IMPERF.PASS: 3
+	'okohuni-: 1
+
+vii.PERF: 3
+	neentou'u-: 2
+
+vii.IMPERS.NEG: 3
+	hoowoe'inonetiitoon: 2
+
+vii.backref.REDUP: 3
+	nee'eenee3oo-: 3
+
+vii.subj: 3
+	nooke'ehk: 3
+
+vii.selfb.IMPERS: 3
+	bii'inowoohuutooni-: 1
+
+vii.PASS.IMPERF(?): 3
+	niibeinihi-: 1
+
+vii.pass?: 3
+	ciinohoeni': 2
+
+ni/vii+pl/iter: 3
+	biisiii'ou-: 1
+
+vii+pl/iier: 3
+	ko'usei-: 2
+
+vii(alt.): 3
+	iiyohou'oxoo-: 2
+
+vii.pass.REDUP: 2
+	'eeneihkoo3eni: 1
+
+vii.NEG.REDUP.PASS: 2
+	ceeneiteneihiinoo-: 1
+
+ni/vii.imperf: 2
+	i: 1
+
+vii.REDUP.PASS.IMPERF: 2
+	eeneisxuh'u-: 1
+
+vii.deriv+pl: 2
+	eihiinou': 1
+
+vii(alt): 2
+	i3eti': 1
+
+vii.PASS.REDUP+pl/iter: 2
+	heeneise'enou'uheihiinou-: 2
+
+ni/vii.PASS.IMPERF: 2
+	niisniikou'usi'-: 1
+
+ni/vii.ITER: 2
+	he'eenei3ooni'i: 2
+
+vii.recip: 2
+	boo3eti-: 1
+
+vii.perf: 2
+	uuxokeeekoni: 1
+
+vii.rel.redup+pl/iter: 2
+	eenei3ou-: 1
+
+vii.PASS.imperf: 2
+	xo'oyohu-: 1
+
+vii.REL.IMPERF+pl/iter: 2
+	hinee: 1
+
+vii.iter: 2
+	he'iitnei'i: 1
+
+vii.PASS.IMPERF+pl/iter: 2
+	nih'ii-: 1
+
+vii.incorp.pass: 2
+	ibei'ci3eiyookuti-: 1
+
+vii.PASS.IMPERS: 2
+	bii3wooneihiitooni-: 1
+
+vii.rel.redup.imperf.impers: 2
+	neenei3ohwootiini-: 2
+
+vii.pass.redup: 2
+	neenei3eneihiinoo-: 1
+
+vii.PASS+pl: 2
+	niisiyoohuunou-: 1
+
+vii.back+pl/iter: 2
+	nee'ee3ou-: 2
+
+vii.REL.PASS+pl/iter: 2
+	iisih'eihiinou-: 1
+
+vii.back.redup: 2
+	nee'eenee3onise-: 1
+
+vii.BACK: 2
+	nee'ee3ooceitee-: 1
+
+vii.impers.back.redup: 2
+	nee'eeneestootiini-: 2
+
+vii.REL.REDUP.IMPERF+pl/iter: 2
+	neenei3ei'ou-: 1
+
+vii.incorp.DIM: 2
+	coo'otoyouhu-: 1
+
+vii.rel.IMPERS: 2
+	'iistootiini-: 2
+
+vii.o: 2
+	iixoni3einoo-: 2
+
+vii/ni.pl: 2
+	nii3konoo3einou'u: 2
+
+vii.IMPERF(?): 2
+	niitoeyoti-: 2
+
+vii.rel.redup.impers: 2
+	heeneestootiini-: 2
+
+nii/vii: 2
+	toh'uusiini': 2
+
+vii.incorp+pl/iter: 2
+	teeno'owuusei-: 1
+
+vii.impers.REDUP: 2
+	'eeneibiixuutooni-: 1
+
+vii+pl/iter.IMPERF: 2
+	niinou'ou-: 1
+
+vii+pl/ter: 2
+	cebii'ou-: 1
+
+vii+pl/iter(nonstandard): 2
+	ce'ei-: 2
+
+vii.REDUP(?): 2
+	heenihii3oo-: 2
+
+vii.pass.imperf(sp?): 2
+	nottowuuhu-: 2
+
+vii.IMPERES: 2
+	ohookeeniitooni-: 2
+
+vii.imperf+pl/iter: 2
+	niinowo'ou-: 1
+
+vii.pass.redup+pl/iter: 2
+	'eeneisiiteneihiinou-: 2
+
+vii.pass.neg: 2
+	hoowoe'inoneihiinoo: 2
+
+vii.re;: 2
+	hei'ise-: 2
+
+vii+iter: 2
+	heestei-: 1
+
+ni/vii.IMPERF: 2
+	heet-: 1
+
+vii+pl/iter.REDUP: 1
+	heneeneiyohou'oxou-: 1
+
+vii.impers/ni.DEF.OBJCT: 1
+	noohoo3ootiini-: 1
+
+vii.IMPERF.REDUP.REL: 1
+	neeneisooni-: 1
+
+vii.REDUP.IMPERF.REL: 1
+	neeneitoxneniinoo-: 1
+
+vii.IMPERS.REL.IMPERF: 1
+	koo-: 1
+
+vii.BACKREF+pl/iter: 1
+	nee'eesisei-: 1
+
+vii+pl.incorp: 1
+	woo'oteenotoyou'-: 1
+
+vii.redup.imperf: 1
+	neeneisiiyoo-: 1
+
+vii.redup+PL: 1
+	heeneixoxonei-: 1
+
+vii.mid: 1
+	noohobee: 1
+
+vii.IMPERS.PASS.IMPERF: 1
+	nihi'kuuhuutooni-: 1
+
+vii.IMPERS.BACKREF.REDUP: 1
+	nuh'uuno: 1
+
+vii.imperf.recip: 1
+	betoooxohetiitooni-: 1
+
+vii.imperf.pass.imperf: 1
+	niitooni-: 1
+
+vii.PASS.IMPERF.REDUP: 1
+	heenei'ooku3u-: 1
+
+vii.dim.redup: 1
+	hoonokecouhuhu-: 1
+
+vii.impers(alt): 1
+	koo'ouutootooni-: 1
+
+vii.IMPERS.: 1
+	coboonoxu'utooni-: 1
+
+vii.IMPERS.SELFB: 1
+	ce'eiinowootiini-: 1
+
+vii.rel(sp?): 1
+	heetoxuhu-: 1
+
+vii.impers.rel.imperf.redup: 1
+	neeneiseihiitooni-: 1
+
+vii.pas+pl/iter: 1
+	noti'oneihiinou-: 1
+
+ni/vii.imperf.incorp+pl/iter: 1
+	niiceece'ese'einou-: 1
+
+vii.neg.redup: 1
+	ceene'ineeyoo-: 1
+
+vii.impers.refl: 1
+	niisihetiitooni-: 1
+
+vii.incorp.impers: 1
+	'iniito'eibetiitooni: 1
+
+vii.pl/iier: 1
+	ko'usei-: 1
+
+ni/vii.pass.imperf: 1
+	niiko'owuni-: 1
+
+vii.impers.rel.redup: 1
+	heenei3o'oubetiitooni-: 1
+
+vii.impers.REL: 1
+	nii3owoo'ootiini-: 1
+
+vii.impers.back.REDUP: 1
+	nee'eeneestootiini-: 1
+
+vii.impers.recip: 1
+	woteexohetiitooni-: 1
+
+vii.impers.imperf: 1
+	niino'ootiini: 1
+
+vii.impers.rel.incorp: 1
+	hee3e'eihiitooni-: 1
+
+vii+pl.IMPERF: 1
+	niixoo'ou-: 1
+
+vii.pass.imperf.rel.imperf: 1
+	niisih'i-: 1
+
+vii.impers.redup.imperf: 1
+	neeneisiininouhuutooni-: 1
+
+vii.incorp.redup: 1
+	hoono'oowuuni: 1
+
+vii.rel.PAST: 1
+	'iisoo-: 1
+
+vii.REL/ni: 1
+	hee3o'obee': 1
+
+vii.back+Pl: 1
+	nee'eetoxei-: 1
+
+vii.selfb.impers: 1
+	tono'wuuhowootiini-: 1
+
+vii.impers.rel.REDUP.IMPERF: 1
+	neenei3o'eibetiitooni-: 1
+
+vii.imperf.pass+pl/iter: 1
+	niisiiteneihiinou-: 1
+
+vii.redup.PASS: 1
+	heeneise'enou'uheihiinoo-: 1
+
+vii.back.redup+pl/iter: 1
+	nee'eenee3ou-: 1
+
+vii.pass.imperf.rel.incorp: 1
+	hee3e'eicitoni: 1
+
+vii.IMPERS.REDUP.SELFB: 1
+	'eeneitenowootiini-: 1
+
+vii.redup.neg: 1
+	ceenentou'u-: 1
+
+vii.IMPERF.PASS.IMPERF: 1
+	nee'eenebeihiinoo-: 1
+
+vii?: 1
+	nohkou3i': 1
+
+vii.neg.incorp: 1
+	cee'eeto'o'obee-: 1
+
+vii.incorp.pass.imperf: 1
+	outeyooneeni-: 1
+
+vii(nonstandard).REL: 1
+	heetohni-: 1
+
+vii+pl/.iter(?): 1
+	honoowoo'oo3ei-: 1
+
+vii.RED.IMPERS: 1
+	niitoo-: 1
+
+vii.impers.INCORP: 1
+	wo'tokoyohootooni-: 1
+
+vii.impers/ni.INADJ: 1
+	noohoo3ootiini-: 1
+
+vii.rel.impers: 1
+	'ei'toowoohuutooni-: 1
+
+nipl/viipl: 1
+	': 1
+
+vii.INSERT: 1
+	gangsniini-: 1
+
+ni/vii.impers.0.OBV: 1
+	niitixootiinini': 1
+
+vii.dim.imperf: 1
+	nookecouhu-: 1
+
+vii,IMPERS: 1
+	noonokoontootiini: 1
+
+ni/vii.PASS: 1
+	nii3o'eni': 1
+
+vii.PASS.IMPERF.: 1
+	ko'usini-: 1
+
+vii.IMPERF.REDUP: 1
+	neeneixoni3einoo-: 1
+
+ni.pl/vii.pl: 1
+	niiko'einou'u: 1
+
+vii.back.PASS: 1
+	nee'ei'toowooheihiinoo-: 1
+
+vii.IMPERS(alt.): 1
+	wottootiini-: 1
+
+vii.impers.neg.incorp: 1
+	ciitotiibiitooni-: 1
+
+vii.PASS.IMPERF/ni: 1
+	se'3iixohuni-: 1
+
+vii.pass.imperf?: 1
+	'oyeitiibi: 1
+
+vii.REL.REDUP+pl: 1
+	heeneisei-: 1
+
+vii.impers(sp?): 1
+	'o'oobeeetiini-: 1
+
+vii.rel.backref.pass: 1
+	nee'eeneisih'inee-: 1
+
+vii.ITER.0OBV: 1
+	he'iitneenini'i: 1
+
+vii/ni.INTERR(arch.): 1
+	tootouti': 1
+
+vii.REDUP.REL+pl/iter: 1
+	heeneetoxei-: 1
+
+vii.PASS.IMPERF.IMPERS: 1
+	nohkohuutooni-: 1
+
+vii.PASS.REL.REDUP.IMPERF: 1
+	neeneisi3ootoneihiinoo-: 1
+
+vii.PASS+iter/pl: 1
+	coboo-: 1
+
+vii.rel.: 1
+	hee3eenoo-: 1
+
+vii.redup.pass: 1
+	eeneiteneihiinoo: 1
+
+vii.impers.: 1
+	niisi3ootiini-: 1
+
+vii.REDUP+pl: 1
+	heeneixoo'usei-: 1
+
+vii.pass.IMPERS: 1
+	oo'eineihiitooni-: 1
+
+vii.imperf.incorp+pl: 1
+	niinooke'einou-: 1
+
+vii.impers/ni: 1
+	noonohku3ootiini': 1
+
+vii.incorp+pl: 1
+	neniisoonei'-: 1
+
+ni/vii.back.redup: 1
+	nee'eeneesnooyoti': 1
+
+vii.rel.redup+pl: 1
+	'eeneitiseenou-: 1
+
+vii.SELFB.IMPERS: 1
+	noh'outowootiini-: 1
+
+vii.pass+pl: 1
+	wo'3iheihiinou-: 1
+
+vii.BACKREF.incorp: 1
+	nee'eete'eini-: 1
+
+vii.impert: 1
+	nooxutootee: 1
+
+vii..incorp.IMPERS: 1
+	nootookeitooni-: 1
+
+vii.REDUP.PASS: 1
+	'eeneisih'ini-: 1
+
+vii.backref+pl/iter: 1
+	nee'eesisei-: 1
+
+vii.INCORP.PASS.IMPERF: 1
+	hootooneihiini-: 1
+
+vii.IMPERS.REDUP.incorp: 1
+	eeneinono'eitiitooni-: 1
+
+vii.INCORP.IMPERS: 1
+	niibiicooonootiini-: 1
+
+vii(ciihooyoo?): 1
+	ciihoyoo: 1
+
+vii.pass.imperf(?): 1
+	ce'escei'stooni: 1
+
+vii.IMPERS.BACLREF: 1
+	nee'eeneecxootiini-: 1
+
+vii.neg.redup.pass.imperf: 1
+	ceene'ini-: 1
+
+vii.IMPERS.BACK.REDUP: 1
+	nee'eeneestoowoohuutooni-: 1
+
+ni/vii.dim: 1
+	hookecouhuhu'-: 1
+
+vii.mpers: 1
+	heneenetiitooni-: 1
+
+vii.rel.redup.incorp: 1
+	heeneeskooti-: 1
+
+vii.PASS.REDUP: 1
+	heeneeteenebeihiinoo-: 1
+
+ni/vii.pl.REDUP: 1
+	ceeceibecei'inou'u: 1
+
+vii.incorp.IMPERS: 1
+	hiiyeih'iitooni-: 1
+
+vii.impers.rel.redup.imperf: 1
+	neenei3owooyeitiitooni-: 1
+
+vii.incorp.REDUP.IMPERS: 1
+	heeneiniito'eibetiitooni-: 1
+
+vii.rel.PASS.IMPERF: 1
+	niisih'iinou-: 1
+
+ni/vii.imperf.pass.pl: 1
+	niibeneibihi'i: 1
+
+vii.backref.IMPERS: 1
+	nee'eesxootiini: 1
+
+vii.pass.inperf: 1
+	ciineni-: 1
+

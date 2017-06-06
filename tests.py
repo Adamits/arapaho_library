@@ -3,6 +3,7 @@
 from lexicon import *
 from corpus import *
 from analyzer import *
+import codecs
 
 text = Text()
 lexicon = Lexicon()
@@ -21,16 +22,44 @@ corpus = Corpus()
 
 #corpus.add_entries(text.examples_as_dicts())
 
-exact_matches_list = ["na", "ni", "vai", "vai.o", "vai.t", "vii", "vii.impers", "vti", "vta"]
+'''
+examples = text.examples
 
-regex = re.compile(r"\bvai\b")
-analyzer = Analyzer(corpus)
-analyzer.pos_counts_regex(regex)
+tags = []
+for example in examples:
+  for mb_ps in example.mb_and_ps_tuples():
+    tags.append("%s\t%s" % (mb_ps[0], mb_ps[1]))
 
-for exact_match in exact_matches_list:
-  analyzer.pos_counts_exact(exact_match)
+with codecs.open("./data/pos_tags.txt", 'w', encoding="Latin-1") as outfile:
+  outfile.write('\n'.join(tags))
 
-analyzer.write("./data/analysis.txt")
+
+x = corpus.get_text_examples({"ge": {"$regex": "\Wdo s\.t\."}})
+print len(x)
+for ex in x:
+  print ex.get_mb_list()
+  print ex.ge
+
+'''
+
+#analyzer = Analyzer(corpus)
+#analyzer.all_pos_counts()
+
+#analyzer.write("./data/analysis.txt")
+
+def do_analysis():
+  #exact_matches_list = ["na", "ni", "vai", "vai.o", "vai.t", "vii", "vii.impers", "vti", "vta", "PST*", "FUT*",
+  #                      "IMPERF*", "PERF*", "IMPER*", "NEG*", "INTERR*", "SUBJ*", "ITER*", "DEP.PART*"]
+  searches = [r"\b(vai).*", r"\b(vaa).*", r"\b(vti).*", r"\b(vta).*", r"\b(vii).*"]
+
+  analyzer = Analyzer(corpus)
+  analyzer.log_totals()
+  for regex in searches:
+    analyzer.pos_counts_regex(re.compile(regex))
+
+  analyzer.write("./data/analysis.txt")
+
+do_analysis()
 
 def compare_glosses():
   vtis = lexicon.where("pos is vti")

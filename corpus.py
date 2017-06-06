@@ -25,6 +25,15 @@ class Corpus(object):
 
     return text_examples
 
+  def get_all_text_examples(self):
+    results = self.collection.find()
+    text_examples = []
+
+    for example_dict in results:
+      text_examples.append(TextExample(example_dict))
+
+    return text_examples
+
   # cursor is mongos record set, which is an iterable object of
   # multiple documents. Kind of like SSQL records
   def get_cursor(self, args={}):

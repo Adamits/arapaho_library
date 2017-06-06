@@ -1,0 +1,1379 @@
+FORMAT OF:
+ pos: frequency
+	 most_frequent_morpheme for that pos: frequency of instances of morpheme with that pos
+
+
+vai: 27143
+	neneeni-: 1589
+
+vai.o: 2548
+	neyei3ei-: 67
+
+vai.t: 2412
+	niistii-: 252
+
+vai.incorp: 918
+	beesei3e-: 32
+
+vai.pass: 753
+	noohobeihi-: 50
+
+vai.rel: 739
+	heetoo-: 115
+
+vai.INCORP: 620
+	cih'ohuseee-: 21
+
+vai.PASS: 543
+	ei'towuuneihi-: 21
+
+vai.selfb: 521
+	niiitowoo-: 33
+
+vai.recip: 371
+	nonouhti-: 35
+
+vai.mid: 362
+	neh'ee-: 11
+
+vai.IMPERF: 312
+	nii-: 113
+
+vai.back: 301
+	nee'eestoo-: 156
+
+vai.REDUP: 239
+	eeneine'etii-: 22
+
+deriv.vai: 237
+	eihi-: 87
+
+vai.impers: 207
+	nihiitooni-: 36
+
+vai.refl: 165
+	wo'oo3eti-: 12
+
+vai.ITER: 150
+	he'iiteihi3i: 128
+
+vai.PASS.IMPERF: 130
+	niisih'i-: 17
+
+vai.INTERR: 123
+	toustoo: 69
+
+vai.rel.REDUP: 117
+	'eeneistoo-: 40
+
+vai.dim: 113
+	hookeciihih-: 18
+
+vai.REL: 110
+	heesi3ecoo-: 35
+
+vai.r: 107
+	neetoxuuheti-: 3
+
+vai.redup: 94
+	'eeneihi-: 9
+
+vai.DIM: 80
+	hookeciihihi-: 21
+
+vai.RECIP: 80
+	oo3itooneti-: 12
+
+vai.SELFB: 80
+	cooh'oukutoo-: 11
+
+vai.REFL: 72
+	hee3eti-: 8
+
+vai.imperf: 65
+	nii3oowu3ecoo-: 14
+
+vai.rel.redup: 64
+	'eeneistoo-: 6
+
+vai.pseudo: 62
+	henee'eehek: 20
+
+vai.REDUP.IMPERF: 62
+	neeneihi-: 20
+
+vai.pass.imperf: 59
+	ceceeco'ohu-: 11
+
+vai.BACKREF: 53
+	nee'eesi3ecoo-: 11
+
+vai.rel.REDUP.IMPERF: 52
+	neeneistoo-: 47
+
+vai.rel.IMPERF: 49
+	niitoo-: 32
+
+vai.MID: 49
+	ciinenee-: 6
+
+vai.rel.pass.imperf: 46
+	'iisih'i-: 28
+
+vai.backref.redup: 40
+	nee'eeneestoo-: 26
+
+vai+pl: 39
+	nou'see: 14
+
+vai+1PL: 39
+	no'uxoo-: 6
+
+vai.pass.imperf.back: 38
+	nee'eesih'i-: 32
+
+vai.PAST: 36
+	heehehkoni': 36
+
+vai.NEG: 33
+	ceentoo-: 11
+
+vai.o.INCORP: 31
+	beetootinee-: 4
+
+vai.DEPPART: 30
+	niistiit: 5
+
+vai.o.REDUP: 29
+	'eeneitoo3ii3ei-: 3
+
+vai.o.redup: 29
+	noonoyei-: 10
+
+na/vai: 29
+	niiniihencebkoohut: 4
+
+vai.REDUP.REL: 28
+	heeneecxooyeihi-: 8
+
+vai.back.redup: 27
+	nee'eeneestoo-: 18
+
+vai.o/vta.INV: 26
+	no'o'uukohei-: 5
+
+vai.t.REDUP: 26
+	neeneistii-: 4
+
+vai.DEPPART+plposs: 25
+	niiheneihiitoon-: 8
+
+vai.REL.REDUP: 23
+	heenee3o'ouwu-: 3
+
+vai.pseudo.obv.pl: 23
+	niine'eeno: 21
+
+vai.REFL/RECIP: 22
+	'ii3eti-: 13
+
+INTERR+infl+vai: 21
+	tootei'eihoo: 18
+
+vai.INCORP.REDUP: 17
+	heeneitonih'i-: 2
+
+vai/vta.INV: 17
+	iiniikohei-: 13
+
+vai.o.incorp: 17
+	oxowooxebei-: 3
+
+vai.REL.IMPERF: 16
+	nii3etouuhu-: 6
+
+vai+pl/iter: 16
+	nowonei-: 5
+
+vai(alt): 15
+	eeso'oo-: 3
+
+vai(sp?): 14
+	coh'o'ooni: 1
+
+vai.imper: 14
+	ceite'e: 5
+
+na.pl/vai.pl: 14
+	niihencebkoohu3i': 12
+
+vai.neg: 14
+	ceebiite-: 3
+
+vai.pass.IMPERF: 13
+	toukuhu-: 6
+
+vai.t.redup: 13
+	eeneinokotii-: 5
+
+vai.rel.redup.imperf: 12
+	neenei3etouuhu-: 3
+
+vai.selfb.REDUP: 12
+	'eeneitenowoo-: 4
+
+vai.rel.imperf: 12
+	niisi3ecoo-: 2
+
+vai.o+1PL: 12
+	neyei3oo-: 4
+
+vai.backref: 11
+	nee'eesinoo'oo-: 2
+
+na/vai.incorp: 11
+	bee3o'oubeet: 3
+
+vai.interr: 11
+	toustoo: 4
+
+vai.RECIP/REFL: 11
+	oo3itouhu-: 7
+
+vai.incorp.pass: 11
+	beehiniisonoonibeihi-: 1
+
+pseudo.vai.INTERR: 11
+	teeteehek: 11
+
+vai.o.IMPERF: 10
+	niisei'i-: 2
+
+vai.REDUP.INCORP: 10
+	eeneiteebiyooni-: 2
+
+vai.mid.rel: 10
+	hee3eisibee: 3
+
+vai.t.IMPERF: 10
+	nooxuwutii-: 2
+
+vai.PASS.REDUP: 10
+	'eeneixoohoo3iheihi-: 3
+
+vai.incorp.REDUP: 9
+	'eeneinono'eiti-: 2
+
+vai.mid+infl: 9
+	hee3eetehk: 8
+
+vai.REDUP.PASS: 9
+	hoonoo'eiso'oneihi-: 2
+
+vai.red.redup: 9
+	heenee3e'eisee-: 9
+
+vai.pass.redup: 9
+	heeneiteteihi-: 3
+
+vai.incorp.dim: 8
+	o3eihteihi-: 4
+
+vai.refl.REDUP: 8
+	heenee3eti-: 3
+
+vai.IMPER: 8
+	ceite'e: 4
+
+vai.o.imperf: 8
+	niinooxeihi-: 2
+
+vai(?): 8
+	koohunee-: 2
+
+vai.reci[: 7
+	nihii3eti-: 6
+
+vai.o(?): 7
+	neniiih'o'onei-: 2
+
+vai.pseudo.interr: 7
+	teeteehek: 6
+
+vai.RECIP.IMPERF: 7
+	nii3eti-: 7
+
+vai.neg.incorp: 7
+	ciitei'yooniibi: 2
+
+vai.redup.rel: 6
+	eeneitoo-: 3
+
+vai+PL: 6
+	nootei-: 3
+
+vai.perf: 6
+	iistoo-: 4
+
+vai.DIM.IMPERF: 6
+	nookeciihihi-: 6
+
+vai.mid.incorp: 6
+	beehiiniisonoonibee-: 2
+
+vai.incorp.redup: 6
+	kookooxookuteesine-: 1
+
+vai.INSERT: 6
+	powwow-uni: 1
+
+vai.t.imperf: 6
+	noononitii-: 2
+
+vai.deppart: 6
+	bii3hiin-: 5
+
+vai.r.redup: 6
+	'eeneinci3eti: 1
+
+vai.o.REDUP.IMPERF: 6
+	neeneiteyei-: 2
+
+vai.t.NEG: 5
+	ciistii-: 2
+
+vai.INCORP.SELFB: 5
+	hehiisi'ouhu: 4
+
+vai.mid.neg: 5
+	ciineyoohee-: 1
+
+vai.mid.REL.IMPERF: 5
+	niisihee-: 4
+
+vai.IMPERF.PASS: 5
+	neeneti3eihi-: 1
+
+vai.incorp.selfb: 5
+	hehiisi'ouhu-: 1
+
+proclitic+infl+prefix+vai: 5
+	tooteeni'ihoo: 3
+
+vai.o.DEPPART+plposs: 5
+	'iise'enou'u3oon-: 2
+
+vai.o.DEPPART: 5
+	niitowoo: 2
+
+vai.o/vta.inv: 5
+	ce3iikohei-: 2
+
+vai.REL.PASS: 4
+	'iitooxobeihi-: 1
+
+vai.incorp.back: 4
+	nee'eesohoo'oo-: 1
+
+vai.SELFB.REDUP: 4
+	eeneixoohootowoo-: 3
+
+vai+1pl: 4
+	heniise'enou'oo-: 2
+
+vai.REDUP.incorp: 4
+	'eeneinono'eiti-: 3
+
+vai.mid.imperf: 4
+	noowouunonee-: 1
+
+vai.pl.IMPERF: 4
+	niiniihencebkoohu3i': 3
+
+vai.r.incorp: 4
+	hineehebeh'ibeti-: 2
+
+vai.PERF: 4
+	heniixoowusee-: 2
+
+vai.REDUP+pl/iter: 4
+	heeneihootei-: 2
+
+vai.REL.IMPERS: 4
+	nii3ouh'u-: 1
+
+vai.PASS.NEG: 4
+	cee'inoneihi-: 3
+
+vai.iter: 4
+	he'iiteihi3i-: 3
+
+vai.rel.incorp: 4
+	iiskoehi-: 2
+
+vai.part: 4
+	coboot: 2
+
+vai.t.REL: 4
+	iistii-: 3
+
+vai.o.rel.redup: 4
+	nee: 1
+
+vai.mid.back: 4
+	nee'eetoxou'xonee-: 4
+
+vai.t.rel: 4
+	'ee3ooxuwuutii-: 1
+
+PART/vai.subj.3S: 4
+	nei'ei3ihehk: 3
+
+vai.INCORP.IMPERF: 4
+	niibeeteini-: 2
+
+vai.mid.BACKREF: 4
+	wootii: 1
+
+vai.INCORP.recip: 4
+	eete'eikuu3eti: 2
+
+vai.selfb(?): 4
+	coo'utowoo-: 2
+
+vai.o.neg: 3
+	cii'otoonee: 1
+
+vai.final: 3
+	-neniini-: 2
+
+vai.pass(?): 3
+	'iteteihi-: 1
+
+vai.DEPPART.pass: 3
+	nestoobeihiit: 3
+
+na/vai.imperf: 3
+	niinohkuseicetouuhut: 3
+
+vai.IMPERF.incorp: 3
+	niinono'eiti-: 3
+
+vai.mid.res: 3
+	tehk: 2
+
+vai.INCORP.neg: 3
+	ciiteibi-: 1
+
+vai.incorp+pl: 3
+	beesei3ei-: 3
+
+vai.mid(arch.): 3
+	'oo3onihoo: 2
+
+vai.selfb.redup: 3
+	tooto'usetoo: 1
+
+vai.BACKREF.INCORP: 3
+	nee'ee3oxonee-: 2
+
+vai.redup.incorp: 3
+	neeneiniisooni-: 1
+
+na.pl/vai.incorp.pl: 3
+	niiniiso'ohtee3i': 1
+
+vai.incorp.IMPERF: 3
+	neeni'ei-: 1
+
+vai.t.REL.REDUP: 3
+	heeneistii-: 2
+
+vai.incorp(sp?): 3
+	niine3i'eini: 1
+
+vai.recip/refl: 3
+	oo3itouhu-: 1
+
+vai.incorp.imperf: 3
+	neebetei3ei-: 1
+
+na/vai.o: 3
+	niinkoohuu3eit: 2
+
+vai.rel?: 3
+	hehkuhnee-: 3
+
+vai/vta.inv: 3
+	iiniikohei-: 2
+
+vai.BACKREF.REDUP: 3
+	nee'eeneistoo-: 2
+
+vai+12: 3
+	no'uxoo-: 2
+
+vai.past: 3
+	cebeihi-: 3
+
+vai.pass.neg: 3
+	ciiteneihi-: 2
+
+vai+1P: 3
+	noo'xoo: 2
+
+vai.selfb.DEPPART+plposs: 3
+	niiitowootiin-: 2
+
+vai.refl/recip: 3
+	niisih'eti-: 2
+
+vai.INCORP(?): 3
+	beesooowu-: 3
+
+vai.o.rel: 3
+	'iisoh'oe-: 2
+
+vai.SELFB(?): 3
+	niiteheibinouhu: 1
+
+vai.PASS.BACKREF: 3
+	nee'eesiheihi: 1
+
+vai.REL.REDUP.IMPERF: 3
+	neeneisoxuuheti-: 1
+
+vai.refl.IMPERF: 3
+	niixoxuuheti-: 2
+
+vai.pl: 3
+	nei'ei3hehkoni': 3
+
+vai.PASS.IMPERF.REL.REDUP: 3
+	heenee3ookuhu-: 3
+
+vai.rel.REDUP.PASS: 2
+	heeneesih'eihi-: 1
+
+vai.mid.NEG: 2
+	cei'towuunee-: 1
+
+vai.o.REL: 2
+	'iiteso'oei-: 1
+
+vai.pseudo.OBV.PL: 2
+	henee'eeno: 2
+
+vai.o.NEG: 2
+	ceeteenee3ei-: 2
+
+vai.incorp+pl/iter: 2
+	ni'ii3ei3ei-: 2
+
+vai.mid(?): 2
+	okooteesee-: 1
+
+vai.r.rel: 2
+	heesiheti-: 1
+
+vai.RECIP.REL.REDUP: 2
+	heenei3osohowuuneti-: 1
+
+vai.BACKREF.REDUP.REFL: 2
+	nee'eenee3oxuuheti-: 2
+
+na/vai.INCORP: 2
+	koo'eino'ohteet: 2
+
+vai.REFL.REDUP: 2
+	heeneixoniheti-: 1
+
+vai/na.DEF.UNDER: 2
+	hoohookeeni-: 1
+
+vai.r.imperf: 2
+	nooseito'ooheti-: 1
+
+vai.REDUP.SELFB: 2
+	'eeneixoohowoo: 1
+
+vai.oREDUP: 2
+	booboo'ei: 2
+
+vai/na.SBJCT: 2
+	nonookunesee-: 2
+
+vai.imperf.incorp: 2
+	niinohceineeyooni-: 1
+
+vai.o.REDUP.HABIT: 2
+	neeneisiii'oo3ei-: 2
+
+vai.t.INTERR: 2
+	toustii: 2
+
+vai/vta.INVERSE: 2
+	no'uukohei-: 2
+
+vai.redup.imperf: 2
+	neeneiton-: 1
+
+vai.sELFB: 2
+	noo'ouhu: 2
+
+vai.rel.pass: 2
+	'ii3eenebeihi-: 1
+
+vai.r.neg: 2
+	cii3eti-: 1
+
+vai.incorp(?): 2
+	3o'oobe'eiyoo: 2
+
+vai.pl/iter: 2
+	ebiitei-: 2
+
+na/vai.pl: 2
+	tooxu'eihi3i': 1
+
+vai.back.REDUP: 2
+	nee'eeneetoo-: 2
+
+vai.incorp.rel.imperf: 2
+	niisiibee-: 2
+
+vai.o.BACK: 2
+	nee'eehkuhnee-: 2
+
+vai.rel.redup.pass.imperf: 2
+	heeneesih'i-: 2
+
+vai.mid.rel.REDUP.IMPERF: 2
+	neeneisihee-: 1
+
+vai.incorp.rel: 2
+	hee3e'eisee-: 1
+
+vai.3S: 2
+	niiniihencebkoohut: 2
+
+vai.incorp.neg: 2
+	ceniibiixuutoni-: 1
+
+vai.o.REL.IMPERF: 2
+	nii3ou3eibeee-: 2
+
+vai.DEPPART.PASS: 2
+	niiwoo3heihiit-: 2
+
+vai.: 2
+	ceniitehee3ei-: 2
+
+vai.INCORP.NEG: 2
+	3i': 1
+
+vai/na.DEF.SBJCT: 2
+	nonooneehei-: 1
+
+vai.incorpo: 2
+	ce3ooceisee: 1
+
+vai.RED.REDUP: 2
+	heenee3e'eisee-: 2
+
+vai.mid.INCORP: 2
+	tone'eihee-: 1
+
+vai.PERF.REDUP: 2
+	heeneixoo3itee: 2
+
+vai.t.back.redup: 2
+	nee'eeneestii-: 2
+
+vai.t.incorp: 2
+	3i'eyoonootii: 1
+
+na/vai.obv.pl: 2
+	biixoxko'ou'u: 2
+
+vai.mid.rel.imperf: 2
+	nii3ei'towuunee-: 1
+
+vai.mid.interr: 2
+	tousihee: 2
+
+vai/na.DEF.AGENT: 2
+	nonooneehei-: 1
+
+vai.refl.INCORP: 2
+	koo'ookuneti-: 2
+
+vai.back.pass: 2
+	nee'ee3eenebeihi-: 1
+
+vai.REL+pl/iter: 2
+	ii'oxou-: 2
+
+vai.SELFB.INCORP: 2
+	ko'ookuneibitoo: 1
+
+vai/na.obv: 2
+	too'ooxeihini3: 2
+
+vai.o.IMPERF+pl/iter: 2
+	neebiitei-: 2
+
+vai.IMPERF(?): 2
+	nento3ih: 2
+
+vai.DEPPART(alt.): 2
+	no'useeneet: 2
+
+vai.i: 2
+	eckuutii-: 1
+
+vai.o+1pl: 2
+	'ocoo-: 2
+
+vai.INCORP.REL: 2
+	heesi'ei-: 1
+
+vai+SUBJ: 2
+	cebieht-: 2
+
+vai(alt.): 2
+	co'ouu3eihi: 1
+
+vai.PART: 2
+	konoot: 1
+
+vai.t.INCORP: 2
+	cih'owuucitii: 1
+
+vai.t.interr: 2
+	toustii: 1
+
+vai.pss: 1
+	'iisiiteneihi-: 1
+
+vai.pass.REDUP: 1
+	heneeneiteneihi-: 1
+
+vai+plposs: 1
+	niibootiin-: 1
+
+vai.selfb.DEPPART: 1
+	niiitowoot: 1
+
+vai.BACK.REDUP.REFL: 1
+	nee'eenee3oxuuheti-: 1
+
+vai.dim.rel.imperf: 1
+	niitouhu-: 1
+
+vai.incorp.interr: 1
+	tou3ei3e: 1
+
+vai.MID.REL: 1
+	hii3ee-: 1
+
+vai.pass.imperf.redup: 1
+	neeneisih'i-: 1
+
+vai.o?: 1
+	nisihi: 1
+
+vai.PARTIC: 1
+	beniiineniiniit: 1
+
+vai.IMPERF.REL: 1
+	niicisee-: 1
+
+vai.impers.REL.REDUP: 1
+	heeneixoohootowootiini-: 1
+
+vai.t(pseudo): 1
+	tooyeitii-: 1
+
+vai.pass.imperf+pl/4poss: 1
+	niisih'iitoon-: 1
+
+vai.self: 1
+	nih'iinowoo-: 1
+
+vai.back.redup.recip: 1
+	nee'eeneesih'eti-: 1
+
+vai.BACKREF.REDUP.IMPERF: 1
+	nee'eeneecxooyeihi-: 1
+
+vai.dim.redup: 1
+	heneeneitiseihi-: 1
+
+vai.rel+1P: 1
+	hee3e'eixoo: 1
+
+vai[sic?]: 1
+	'ooxuu: 1
+
+vai.rel.REDUP.IMPERF.INCORP: 1
+	neeneixotee-: 1
+
+vai.REDUP.IMPERF.REL: 1
+	neenei3owooteihi-: 1
+
+vai.selfb.neg.incorp: 1
+	ceehiisi'ouhu-: 1
+
+vai.rel.o: 1
+	hee3ei'obee-: 1
+
+vai.deppart.SECOBJ: 1
+	bii3hiin-: 1
+
+vai.selfb.REDUP.IMPERF: 1
+	neeneixoohootowoo-: 1
+
+vai.t.: 1
+	eeneixoxonetii: 1
+
+vai.REL.incorp.dim: 1
+	'ii3ei'eseihi-: 1
+
+vai.refl.BACKREF.REDUP: 1
+	nee'eeneecixoxoxuuheti-: 1
+
+vai.INCORP+1PL: 1
+	cebooo-: 1
+
+vai.SELB.IMPERF: 1
+	nee'eeneetowoo-: 1
+
+vai.o(alt): 1
+	huutoohuu-: 1
+
+vai.selfb.neg: 1
+	coonoyoohootowoo-: 1
+
+vai.o.incorp.redup: 1
+	oono'oobei: 1
+
+vai.t.rel.redup: 1
+	heenee3ixootonitii-: 1
+
+vai.back.backref: 1
+	nee'ei'isee-: 1
+
+vai.rel(?): 1
+	heehkuhnee-: 1
+
+vai.NEG.incorp: 1
+	ciinono'eiyeiti-: 1
+
+vai.rel.pass.imperfna.agent: 1
+	'iisih'i: 1
+
+vai.SELFB.BACKREF: 1
+	nee'eeteinowoo-: 1
+
+vai.RECIP.rel: 1
+	nii3ooxuwuheti-: 1
+
+vai.t.REL.IMPERF: 1
+	hinee: 1
+
+vai.incorp.DIM: 1
+	okecii'iseihi-: 1
+
+vai.REDUP.RECIP: 1
+	'eeneixoohoo3iheti-: 1
+
+vai.o..REDUP: 1
+	heeneite'eici3ei'i-: 1
+
+vai.INCORP+pl/iter: 1
+	oot: 1
+
+vai.selfb.DIM: 1
+	ceestouhu-: 1
+
+vai.recip.REDUP: 1
+	heeneinono'eiti3eti-: 1
+
+vai.DIM.IMPERS: 1
+	niihokeciihih-: 1
+
+vai.incorp.rel.redup: 1
+	heenee3oxonee-: 1
+
+vai.BACKREF.REDUP.INCORP: 1
+	nee'eenee3ooku-: 1
+
+vai.incorp.dim.redup: 1
+	tonooto'ooneihi-: 1
+
+na/vai.pl.imperf: 1
+	niinooxuwu3i': 1
+
+vai.rel.PASS: 1
+	'iisih'eihi-: 1
+
+vai/na.IMPOBJ: 1
+	wonooniii'oo-: 1
+
+vai.INCORP.imper: 1
+	teese'eisii: 1
+
+vai.r.DEPPART: 1
+	esoxuuhetiit: 1
+
+vai.med: 1
+	iixoohoo3ihee-: 1
+
+vai.RECIP.REDUP.incorp: 1
+	eeneiniito'eibeti-: 1
+
+vai+1p: 1
+	oxonixoo-: 1
+
+vai.pass.imperf.rel: 1
+	hee3o'oeehi-: 1
+
+proclitic.infl+vai: 1
+	tootei'eihoo: 1
+
+vai.redup.selfb: 1
+	heeneise3ouhu-: 1
+
+vai.REDP: 1
+	heenei3ibi-: 1
+
+vai.t.imperf.redup: 1
+	neeneinkuutii-: 1
+
+vaii+plposs: 1
+	bii3woohuutoon-: 1
+
+vai.REDUP.rel: 1
+	neenei3oteibi-: 1
+
+na/vai.o.redup: 1
+	neeniinkoohuu3ei-: 1
+
+vai.REFL/RECIP.REDUP.IMPERF: 1
+	neeneinono'eiti3eti-: 1
+
+vai.r.rel.redup: 1
+	heenee3o'oubeti-: 1
+
+vai.pass.imperf.DEPPART+pl/4poss: 1
+	toukuhuutoon-: 1
+
+vai.o/vta: 1
+	biskoohuuhei-: 1
+
+vai.IMPERF+pl/iter: 1
+	nii-: 1
+
+vai.selfb.back.REDUP: 1
+	nee'eeneitenowoo-: 1
+
+vai.DIM(?): 1
+	bii'ebeihi-: 1
+
+vai.back.impers: 1
+	e': 1
+
+vai+1plexcl: 1
+	'oowuxoo: 1
+
+vai.na/SBJCT: 1
+	3oo3ouuteisee-: 1
+
+proclitic+infl+prefix+vai.INTERR: 1
+	tootheeni'ihoo: 1
+
+vai.DUBIT.ITER: 1
+	he'iisiiteihi3i: 1
+
+vai.t(nonstandard): 1
+	woti'exetii-: 1
+
+na/vai.pl.IMPERF: 1
+	niiniihencebkoohu3i': 1
+
+vai.SELFB.IMPERF: 1
+	neesnouhu-: 1
+
+vai.back.redup.imperf: 1
+	neeneiciskoohu-: 1
+
+vai.RECIP.REDUP: 1
+	heeneiniito'eibeti-: 1
+
+vai.REDUP.PASS.IMPERF: 1
+	heeneiteni-: 1
+
+vai.pass.DEPPART+plposs: 1
+	'iise'enou'uhuutoneihiitoon-: 1
+
+vai.REL.IMPERF.REDUP.PASS: 1
+	neeneisiheihi: 1
+
+vai.refl.back: 1
+	nee'eetoxtoowooneti-: 1
+
+vai.imperf.redup: 1
+	neeneitisee-: 1
+
+vai/mid: 1
+	ce3kuhnee-: 1
+
+vai.REDUP.IMPERF.REL.INCORP: 1
+	neenei3ooku-: 1
+
+vai.PASS.IMPERF.DIM: 1
+	cenoo'ohuhuh-: 1
+
+vai.DEPPART.REDUP: 1
+	eenei'tobeet: 1
+
+vai.personal: 1
+	ni3: 1
+
+vai.INTERR.incorp: 1
+	tou3ei3e-: 1
+
+vai.REL.REDUP.REFL: 1
+	heenei3oxuuheti-: 1
+
+vai.selfb.IMPERF: 1
+	niisiitenowoo-: 1
+
+vai.incorp.NEG: 1
+	ciinono'eiti-: 1
+
+vai.r.back.redup: 1
+	nee'eenee3ooxuwuheti-: 1
+
+vai.recfl: 1
+	niiteheibeti-: 1
+
+proclitic+vai.back: 1
+	nee'ee3eetoo-: 1
+
+vai.recip.INCORP: 1
+	nisice'einowuuneti-: 1
+
+na/vai.INDP: 1
+	heeninouhu-: 1
+
+vai.DEP.PART+PL.POSS: 1
+	niistoowoohuutoon-: 1
+
+vai.SUBJ: 1
+	heeteehehk: 1
+
+vai.i.redup: 1
+	'eeneitookohei-: 1
+
+vai.o.REDUP.REL: 1
+	wootii: 1
+
+vai.PASS.imperf: 1
+	neyoo'uutoni-: 1
+
+vai.incorp.pass.imperf: 1
+	ceite'eicihi-: 1
+
+vai.imperf.pass: 1
+	niiteneihi-: 1
+
+vai.REP.REDUP.IMPERF: 1
+	neenei3eineekoohu-: 1
+
+vai.that: 1
+	nee'eetoo-: 1
+
+vai.incorp.PASS: 1
+	wo'ohnoooneihi-: 1
+
+na.pl/vai.pl.incorp: 1
+	niico'otoooyou'u: 1
+
+vai.back.dim: 1
+	nee'eetouhu-: 1
+
+vai.rel.: 1
+	heetoo-: 1
+
+vai.pass.DEPPART: 1
+	biineihiit: 1
+
+vai.dim.(?): 1
+	cowo'ouhu: 1
+
+vai.PASS.REL.REDUP.IMPERF: 1
+	neenei3oohobeihi-: 1
+
+vai.rel.imperf.redup: 1
+	neenei3owoo'oo-: 1
+
+vai.pass.rel: 1
+	hee3oo3itooneihi-: 1
+
+vai.benef.mid: 1
+	ciinenowuunee-: 1
+
+vai.recip.IMPERF: 1
+	nooxooheti-: 1
+
+vai.selfb.imperf: 1
+	niitenowoo-: 1
+
+vai.SELFB.DIM: 1
+	'otouhuh-: 1
+
+vai.t.rel.redup.imperf: 1
+	neeneitoxuusitii-: 1
+
+vai.MID(?): 1
+	no'uce'ee-: 1
+
+vai.o.dim(?): 1
+	niitowouhu-: 1
+
+vai.pass.dim: 1
+	oxobeihihi-: 1
+
+vai.t.DIM: 1
+	ootiihihi-: 1
+
+vai.icorp: 1
+	nih'oo3ouyeiti-: 1
+
+vai.rel.backref: 1
+	nee'ei'okusee-: 1
+
+vai.incorp.refl: 1
+	te'etoneti: 1
+
+vai?: 1
+	bii3oot: 1
+
+vai.INCOR: 1
+	nookoseineehi-: 1
+
+vai.INCORP/REDUP: 1
+	heeneite'einooxobei-: 1
+
+vai.redup.imperf+pl/iter: 1
+	neenebiitei-: 1
+
+vai.SELFB.NEG: 1
+	ciitooxuu'ootowoo: 1
+
+vai.o.incorp.REDUP: 1
+	heeneise'eikuu3ei-: 1
+
+vai.MID.rel: 1
+	'iisih'iitee-: 1
+
+na/vai.redup.imperf: 1
+	neeneinkoohuu3eit: 1
+
+vai.PASS?: 1
+	ko'usiini-: 1
+
+vai.o(sp??): 1
+	i'-: 1
+
+vai.rel.recip: 1
+	'iicixoxuuheti-: 1
+
+vai.PASS.IMPERF.REDUP: 1
+	neeneisiiteneihi-: 1
+
+vai.IMPERF.REDUP: 1
+	neeneise'enou'u-: 1
+
+vai+1S: 1
+	neyei3oo-: 1
+
+vai.redup.MID: 1
+	'eenei'towuunee-: 1
+
+vai.t.BACKREF: 1
+	nee'ee3ouuwutii-: 1
+
+vai.incorp.PASS.REDUP: 1
+	heeneitonih'ooo3eihi-: 1
+
+vai.PERF.REDUP+1P: 1
+	heneiniisii3woo-: 1
+
+vai.INCORP.selfb: 1
+	bixohoekoohuutoo-: 1
+
+vai.t.incorp.REL: 1
+	hee3e'eitii-: 1
+
+vai.incorp.REL: 1
+	hee3e'eitii-: 1
+
+vai(nonstd): 1
+	hoohookeihi-: 1
+
+vai.o.impers: 1
+	niisiiteyei-: 1
+
+vai.deppart+plposs: 1
+	'iinikotiitoon-: 1
+
+vai+1PEXCL: 1
+	hooyoo-: 1
+
+vai.REL.REDUP.INCORP: 1
+	heenei3esohoe-: 1
+
+vai.bacl: 1
+	nee'eetoo-: 1
+
+vai.o.imperf.redup+1PL: 1
+	neenei3etowoo: 1
+
+vai.backref.IMPERF: 1
+	neeneecxooyeihi: 1
+
+vai.selfb.redup.imperf: 1
+	neeneixoohootowoo-: 1
+
+vai.IMPERF.PASS.IMPERF: 1
+	nootiibkuuhu-: 1
+
+vai.t(?): 1
+	niitei'ootii-: 1
+
+vai.[nonstandard]: 1
+	ce'iskuu3oo: 1
+
+vai.PASS(?): 1
+	no3onooneihi-: 1
+
+vai.pass,imperf.DEPPART: 1
+	hih-: 1
+
+vai.selfb.BACK: 1
+	nee'ee3eyoo'ouhu: 1
+
+vai.incorp.rel+pl: 1
+	hee3ei3ei-: 1
+
+vai.REL.REDUP+1PL: 1
+	'eeneisixoo-: 1
+
+vai/refl: 1
+	3ooxowooneti: 1
+
+vai.mid.REDUP: 1
+	heeneitenowuunee: 1
+
+vai.incorp.recip: 1
+	iniiteh'eibeti-: 1
+
+vai.impers.NEG: 1
+	ceti3ootiini': 1
+
+vaii.DEP.PART+PL.POSS: 1
+	niistoowoohuutoon-: 1
+
+vai.t.DEPPART: 1
+	yihxo3oo: 1
+
+vai.DUBIT: 1
+	he'iiciteihi-: 1
+
+proclitic.infl+prefix+vai: 1
+	tooteeni'ihoo-: 1
+
+vai.t.PERF.REDUP: 1
+	heeneistii-: 1
+
+vai(nonstandard?): 1
+	beh'eihehi'oo-: 1
+
+proclitic+vai.rel: 1
+	nee'ee3eetoo-: 1
+
+vai.refl(?): 1
+	hecexookei'iineti: 1
+
+vai.PASS.iperf: 1
+	noh: 1
+
+vai.redup.IMPERF: 1
+	neeneicxooyeihi-: 1
+
+vai.y: 1
+	eseineetii: 1
+
+vai.o.perf: 1
+	hiisebiyei-: 1
+
+vai.BENEF.PASS: 1
+	ko'usetoneihi-: 1
+
+vai.rel.pass.imperf.redup: 1
+	'eeneisih'i-: 1
+
+vai.imperf+pl/iter: 1
+	nootoobei-: 1
+
+vai.redup.past: 1
+	eeneise'enou'uheihi-: 1
+
+vai.INCORP(sp?): 1
+	nei'i'i'otou3enee-: 1
+
+vai.REFL.PERF: 1
+	ii3oxuuheti-: 1
+
+vai.dimin: 1
+	toxu'oohuhu-: 1
+
+vta.inv/vai.o: 1
+	ceteeniikohei-: 1
+
+vai.rel.incorp.REDUP: 1
+	heenee3o'ouni-: 1
+
+vai.o.rel.imperf: 1
+	nii3ooxuwu-: 1
+
+vai.IMPERF+1pl: 1
+	niinixoo-: 1
+
+vai.backref.REDUP: 1
+	nee'eenei'koohu-: 1
+
+vai.o.rel.REDUP: 1
+	'eeneisoh'oe-: 1
+
+vai.REDUP.IMPERF.PASS.REL: 1
+	neenei'ou3eihi-: 1
+
+vai(.DIM?): 1
+	tebii3eihi: 1
+
+vai.pseudov: 1
+	teetee-: 1
+
+vai.incorp.DEPPART: 1
+	nii3ebehiit: 1
+
+vai.PASS.REL.IMPERF.REDUP: 1
+	neenei3oxuuheihi-: 1
+
+vai.incorp?.pass: 1
+	3eeyinei'eihi-: 1
+

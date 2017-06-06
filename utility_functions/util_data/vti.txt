@@ -1,0 +1,167 @@
+FORMAT OF:
+ pos: frequency
+	 most_frequent_morpheme for that pos: frequency of instances of morpheme with that pos
+
+
+vti: 5466
+	e'in-: 366
+
+vti+pl: 188
+	hei'in-: 66
+
+PRO.INTERR+inflex+vti: 102
+	kee'in: 99
+
+prefix+vti: 102
+	hoowoe'in: 59
+
+vti.REDUP: 95
+	heeneisiiten-: 9
+
+vti.NEG: 64
+	cee'in-: 30
+
+vti.DEPPART: 49
+	nii3iyoon-: 7
+
+vti.IMPERF: 44
+	nee'in-: 23
+
+vti(alt): 33
+	nei'in-: 32
+
+vti.imperf: 29
+	niisiiten-: 10
+
+vti.rel: 20
+	'iisih'iit-: 7
+
+vti.redup: 16
+	'eeneisiiten-: 3
+
+vti.back: 16
+	nee'eesih'iit-: 7
+
+vti.INTERR: 14
+	tou3eeneet: 9
+
+vti.incorp: 13
+	nii3oein-: 3
+
+vti.DEPPART+plposs: 13
+	tonounoon-: 4
+
+prefix.vti: 12
+	hoowoe'in-: 12
+
+vti.neg: 9
+	cee'in-: 3
+
+vti.rel.redup: 8
+	heenee3oohoot-: 2
+
+vti.deppart: 8
+	to'oo3oo: 3
+
+vti+1PL: 7
+	ooh-: 4
+
+vti.REDUP.IMPERF: 6
+	neeneiten-: 3
+
+vti+prefix: 5
+	heetnee'in-: 4
+
+vti(pseudo): 5
+	tooyeit-: 5
+
+vti.BACKREF: 4
+	nee'ee3oohoot: 3
+
+vti.pl: 4
+	hei'in-: 3
+
+vti.REL: 3
+	ii3e'in: 1
+
+vti.REDUP.IMPERF.RED: 3
+	'u: 1
+
+vti.NEG.REDUP: 2
+	ceenei3oowot-: 2
+
+vti.redup.imperf: 2
+	neeneixoohoot-: 1
+
+vti+plposs: 2
+	niihenehei3itoon-: 1
+
+vti+infl: 2
+	oohowu': 2
+
+vti(?): 2
+	bii'eenebeet-: 1
+
+vti(?).rel: 1
+	niistow-: 1
+
+vti.rel.imperf: 1
+	nii3eeneet-: 1
+
+vti.BACKREF.REDUP: 1
+	nee'eeneixo'oot: 1
+
+vti.rel.REDUP: 1
+	neeneisiiten-: 1
+
+vti.REL.IMPERF: 1
+	nii3ooxuwuut-: 1
+
+vti.deppart+pl: 1
+	bii'iyoon-: 1
+
+vti.deppart(alt.): 1
+	hi3kuut-: 1
+
+vti(?).REDUP.IMPERF: 1
+	neeneihiitoot-: 1
+
+vti.deppart+4/plposs: 1
+	ni'i3oon-: 1
+
+vti.incorp?: 1
+	ko'oobe'ein-: 1
+
+vti.REL.REDUP: 1
+	3i': 1
+
+vti.deppart.DEF.OBJCT: 1
+	biice3oo-: 1
+
+vti.NEG(?): 1
+	heet-: 1
+
+vti.deppart+posspl: 1
+	bii'iyoon-: 1
+
+vti.REDUP.REL?: 1
+	eenei3en-: 1
+
+vti.REDUP.REL: 1
+	heenei3ex-: 1
+
+vti(alt.): 1
+	heeneise'en-: 1
+
+vti.INSERT: 1
+	knead-hiih-: 1
+
+vti.selfb: 1
+	biisiinowoo3-: 1
+
+vti?: 1
+	niitowootowoot: 1
+
+vti.REDUP.IMPERF?: 1
+	neeneinii3oot-: 1
+

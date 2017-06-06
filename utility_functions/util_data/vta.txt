@@ -1,0 +1,335 @@
+FORMAT OF:
+ pos: frequency
+	 most_frequent_morpheme for that pos: frequency of instances of morpheme with that pos
+
+
+vta: 14527
+	'ii3-: 968
+
+vta.REDUP: 249
+	heenei'towuun-: 43
+
+vta.IMPERF: 218
+	nii3-: 52
+
+vta.4/3S: 212
+	hee3eihok: 209
+
+vta.3S/4: 183
+	hee3oohok: 178
+
+vta.benef: 114
+	niiston-: 13
+
+vta.incorp: 94
+	3iikone'eis-: 4
+
+vta.appl: 78
+	iine'etiiw-: 12
+
+vta.INCORP: 72
+	tebe'eikuu3-: 16
+
+vta.redup: 55
+	eenei3-: 10
+
+vta.d: 46
+	e'inobeenoon-: 6
+
+vta.rel: 40
+	'iisih-: 9
+
+vta.REDUP.IMPERF: 39
+	neenei3-: 13
+
+vta.imperf: 31
+	nii3oowoton-: 4
+
+vta.NEG: 30
+	cee'inon-: 13
+
+vta.applic: 27
+	beetoxuuxo'on-: 2
+
+vai.o/vta.INV: 26
+	no'o'uukohei-: 5
+
+vta.4/3PL: 25
+	hee3eihohkoni': 24
+
+vta.neg: 21
+	cii3oowoton-: 4
+
+vta.3PL/4: 19
+	hee3oohohkoni': 18
+
+vai/vta.INV: 17
+	iiniikohei-: 13
+
+vta.DEPPART: 15
+	cobooo-: 2
+
+vta+IMPER: 14
+	'eenets-: 6
+
+vta.BACKREF: 14
+	nee'ee3eeneb-: 3
+
+vta.DEPPART+plposs: 13
+	noh'ooon-: 2
+
+vta.INTERR: 13
+	tousih-: 9
+
+vta.REL: 13
+	'iisixoh-: 2
+
+vta.rel.imperf: 12
+	niisih-: 8
+
+vta.back: 11
+	nee'eesih-: 8
+
+prefix+vta: 10
+	hoowoe'inon-: 8
+
+vta.3s/4: 8
+	hee3oohok: 7
+
+vta.REL.REDUP: 8
+	heeneesi3ecooton-: 2
+
+vta.redup.imperf: 8
+	neenei'towuun-: 4
+
+vta.1S: 8
+	'eenetis-: 2
+
+vta.rel.REDUP: 7
+	heeneisih: 3
+
+vta.interr: 6
+	tousiinih-: 1
+
+vta.INV: 6
+	niihiikoh-: 5
+
+na/vta: 6
+	woo3oninoo'oot: 3
+
+vta.rel.redup: 5
+	'eeneisih'-: 2
+
+vai.o/vta.inv: 5
+	no'o'uukohei-: 2
+
+vta.d.benef: 5
+	'owouunowuun-: 2
+
+vta.IMPER: 5
+	sooxeen-: 5
+
+vta(sp?): 4
+	eecihi'woon-: 1
+
+vta.4/3s: 4
+	hee3eihok: 4
+
+vta.DEPPART.3+plposs: 3
+	cebiihooon-: 3
+
+vta.PASS: 3
+	noo3eihi-: 3
+
+vai/vta.inv: 3
+	iiniikohei-: 2
+
+vta.incorp.1S: 3
+	unono'eitis-: 1
+
+vta.rel.incorp: 3
+	hee3e'eici3-: 2
+
+vta(?): 3
+	cii3kuutiinoon-: 1
+
+vta(alt.?): 2
+	ceni3ow-: 1
+
+vta.INCORP.REDUP: 2
+	eeneiteihteen: 1
+
+vta.benef.rel: 2
+	hee3eeneetowuun-: 1
+
+vai/vta.INVERSE: 2
+	no'uukohei-: 2
+
+vta.INCORP(sp?): 2
+	nii'eikuu3-: 2
+
+vta.PERF: 2
+	uu3oohow-: 1
+
+vta.DEPPART.pl: 2
+	hoxobeiitono: 2
+
+vta.BACK: 2
+	nee'eesixoh-: 1
+
+vta.INSERT: 2
+	punishhiih-: 1
+
+vta.selfb: 2
+	'itenowoo3-: 1
+
+vta+imper: 1
+	ciinkuus-: 1
+
+vta.REUDP: 1
+	heenei't: 1
+
+vta.neg+1S: 1
+	cooxohoeneenetis-: 1
+
+vta..REDUP: 1
+	heeneisih-: 1
+
+vta.rel/imperf: 1
+	niiteso'on-: 1
+
+vta.INCORP.benef: 1
+	kooniiteenowuun-: 1
+
+vtas: 1
+	hotoni3-: 1
+
+vta.selfb.INSERT: 1
+	skinhiihouhu-: 1
+
+vta.d.applic: 1
+	heeyeiton-: 1
+
+vta.imper: 1
+	ceikuus-: 1
+
+vta.INSTR: 1
+	coo'otoyou-: 1
+
+vta.DEPPART.obv: 1
+	niiwooon: 1
+
+vta.rel.redup.imperf: 1
+	neenei3eekuuh-: 1
+
+vta.deppart+pl/4poss: 1
+	'iicoo3oon-: 1
+
+vta.inv/vai.o: 1
+	ceteeniikohei-: 1
+
+vta.REL.REDUP.IMPERF: 1
+	neeneisih-: 1
+
+vta.recip.REDUP: 1
+	heeneicowo'ooneti-: 1
+
+vta+1S: 1
+	oyoox: 1
+
+vta.incorp.benef: 1
+	bexooon-: 1
+
+vta.IMPERF.INCORP: 1
+	niitohoen-: 1
+
+vta.o: 1
+	heebeh-: 1
+
+vta.imperf.redup: 1
+	neeneinono'eiti3-: 1
+
+vta.BENEF: 1
+	yoo3kuuton-: 1
+
+vta.d.redup: 1
+	neeneiston-: 1
+
+vta.rel..incorp.REDUP: 1
+	eenei3o'ouben-: 1
+
+vta.incorp.REL: 1
+	hee3e'einiikoh-: 1
+
+vai.o/vta: 1
+	biskoohuuhei-: 1
+
+vta.d.benef.incorp: 1
+	beteensohootowuun-: 1
+
+vta+3PL/1S: 1
+	co'ookoox-: 1
+
+vta.REDUP.REL: 1
+	'eeneisih-: 1
+
+vta.DEPPART.3/4+plposs: 1
+	notiitooon-: 1
+
+vta.d.incorp: 1
+	beyoonowuun-: 1
+
+vta.redup.IMPERF: 1
+	neenei3-: 1
+
+vta/na.SBJCT: 1
+	too3iine'etiib-: 1
+
+vta.benef.IMPERF: 1
+	niitenowuun-: 1
+
+vta(sp???): 1
+	nei'iitoowonoon: 1
+
+vta.INCORP(?): 1
+	nuhu': 1
+
+vta.d.benef.back: 1
+	nee'ee3eeneetowuun-: 1
+
+vta(alt.): 1
+	eteininoon-: 1
+
+vta(REDUP?): 1
+	hoonounowoo3-: 1
+
+vta.incorp.redup: 1
+	heeneibe'eici3-: 1
+
+vta.deppart.2S/1S: 1
+	biiniit: 1
+
+vta[nonstandard]: 1
+	nih'oo3eeneti3-: 1
+
+vtainfl: 1
+	to3ih-ei'i: 1
+
+vta.DEPPART.3/4: 1
+	3ookuhooo-: 1
+
+vta.REDUP+1S: 1
+	eeneinono'eitis-: 1
+
+vta.BACK.REDUP: 1
+	nee'eeneesih-: 1
+
+vta.deppart+pl: 1
+	no'xohoon-: 1
+
+vta.DEPPART.4/3+plposs: 1
+	bii3heiitoon-: 1
+
+vta+1S.NONAFF: 1
+	'iis: 1
+

@@ -207,7 +207,7 @@ class TextExample(object):
     return zip(self.get_mb_list(), self.get_ps_list())
 
   def get_segments(self):
-    return [Segment(mb_and_ps_tup) for mb_and_ps_tup in self.mb_and_ps_tuples()]
+    return [Segment(self, i, mb_and_ps_tup) for i, mb_and_ps_tup in enumerate(self.mb_and_ps_tuples())]
 
   def dict_with_segmentation(self):
     formatted_dict = self.__dict__.copy()
@@ -215,7 +215,7 @@ class TextExample(object):
 
     formatted_dict.update({"segments": []})
     for seg in self.get_segments():
-      formatted_dict["segments"].append(seg.__dict__)
+      formatted_dict["segments"].append({"morpheme": seg.morpheme, "pos": seg.pos})
 
     return formatted_dict
 
@@ -229,10 +229,23 @@ class TextExample(object):
 
 class Segment(object):
 
-  def __init__(self, mb_ps_tup=()):
+  def __init__(self, example, index, mb_ps_tup=()):
     self.morpheme = mb_ps_tup[0]
     self.pos = mb_ps_tup[1]
+    self.example = example
+    self.index = index
 
+  def previous_segment(self):
+    try:
+      return self.example.get_segments()[self.index - 1]
+    except:
+      return "<s>"
+
+  def next_segment(self):
+    try:
+      return self.example.get_segments()[self.index + 1]
+    except:
+      return "</s>"
 
 def run_test():
   x = Text()
