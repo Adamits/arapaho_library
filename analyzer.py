@@ -31,8 +31,8 @@ class Analyzer:
                     regex.findall(segment.pos)]
 
     counts = collections.Counter(matching_pos)
-    print "MATCHING TOKENS: %s" % counts.keys()
-    print "%d matches on %s in the corpus" % (sum(counts.values()), regex.pattern)
+    print("MATCHING TOKENS: %s" % counts.keys())
+    print("%d matches on %s in the corpus" % (sum(counts.values()), regex.pattern))
     self._log("%d tokens match %s in the corpus, representing %.1f%% of the corpus\n" % (
     sum(counts.values()), regex.pattern, float(sum(counts.values())) / float(total_pos) * 100.0))
     self._log("\n")
@@ -40,15 +40,15 @@ class Analyzer:
   def pos_counts_exact(self, search_string):
     examples = self.corpus.get_text_examples({'segments.pos': search_string})
 
-    print "%d examples have the pos %s" % (len(examples), search_string)
+    print("%d examples have the pos %s" % (len(examples), search_string))
     self._log("%d examples have the pos %s\n" % (len(examples), search_string))
 
     matching_pos = [segment.pos for example in examples for segment in example.get_segments() if
                     segment.pos == search_string]
 
     counts = collections.Counter(matching_pos)
-    print "MATCHING TOKENS: %s" % counts.keys()
-    print "%d total %s in the corpus" % (sum(counts.values()), search_string)
+    print("MATCHING TOKENS: %s" % counts.keys())
+    print("%d total %s in the corpus" % (sum(counts.values()), search_string))
     self._log("%d tokens are exactly %s in the corpus\n" % (sum(counts.values()), search_string))
     self._log("\n")
 
@@ -60,7 +60,7 @@ class Analyzer:
     total_pos = len(all_pos)
     pos_counts = collections.Counter(all_pos).most_common()
 
-    print "%d tokens across %d examples in the corpus" % (total_pos, total_examples)
+    print("%d tokens across %d examples in the corpus" % (total_pos, total_examples))
     self._log("%d tokens across %d examples in the corpus\n\n" % (total_pos, total_examples))
     self._log("%d unique parts of speech in this corpus\n\n" % (len(pos_counts)))
 

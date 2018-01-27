@@ -81,10 +81,7 @@ class Lexicon(JsonObject):
 class LexicalEntry(JsonObject):
   def __init__(self, entry_json_dict):
     self.json_dict = entry_json_dict
-    try:
-      self.lex_id = self.json_dict.keys()[0]  # lex id is the key
-    except:
-      self.lex_id = ""
+    self.lex_id = list(self.json_dict.keys())[0]  # lex id is the key of the entire thing
     try:
       self.status = self.json_dict[self.lex_id]["status"]
     except:
@@ -232,7 +229,8 @@ class LexicalEntry(JsonObject):
     formatted_dict = self.__dict__.copy()
     formatted_dict.pop("json_dict")
 
-    for key, val in formatted_dict.items():
+    for key in list(formatted_dict.keys()):
+      val = formatted_dict[key]
       if isinstance(val, list) and len(val) > 0:
         if isinstance(val[0], JsonObject):
           formatted_dict[key] = [obj.json_format() for obj in formatted_dict[key]]
@@ -271,7 +269,7 @@ class Sense(JsonObject):
   def json_format(self):
     formatted_dict = self.__dict__.copy()
     formatted_dict.pop("json_dict")
-    for key in formatted_dict.keys():
+    for key in list(formatted_dict.keys()):
       if formatted_dict[key] == None or formatted_dict[key] == "":
         formatted_dict.pop(key)
 

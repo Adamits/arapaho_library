@@ -3,12 +3,3 @@ FORMAT OF:
 	 most_frequent_morpheme for that pos: frequency of instances of morpheme with that pos
 
 
-via.interr: 1
-	tohuutoxu-: 1
-
-via: 1
-	no'oteihi-: 1
-
-via.pass.imperf: 1
-	kouuteni-: 1
-

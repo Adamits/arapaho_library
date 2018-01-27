@@ -9,14 +9,14 @@ lexicon = Lexicon()
 text.parse("../data/77b.txt")
 lexicon.parse("../data/arapaho_lexicon.json")
 
-print "%d entries in lexicon" % len(lexicon.lexical_entries)
-print "%d examples in lexicon" % sum([len(entry.examples) for entry in lexicon.lexical_entries])
-print "%d examples in lexicon according to examplefrequencies" % sum([entry.examplefrequency for entry in lexicon.lexical_entries])
+print("%d entries in lexicon" % len(lexicon.lexical_entries))
+print("%d examples in lexicon" % sum([len(entry.examples) for entry in lexicon.lexical_entries]))
+print("%d examples in lexicon according to examplefrequencies" % sum([entry.examplefrequency for entry in lexicon.lexical_entries]))
 
 mb_ps_tuples_and_examples = text.mb_ps_tuples_and_examples()
 mb_ps_tuples = mb_ps_tuples_and_examples.keys()
 
-print "%d unique mbs in the text" % len(set(mb_ps_tuples))
+print("%d unique mbs in the text" % len(set(mb_ps_tuples)))
 total_examples_count = 0
 examples_to_add_count = 0
 
@@ -41,12 +41,12 @@ for entry in lexicon.lexical_entries:
   # Loop over the examples that have this morpheme
   for match_example in match_examples:
     # Generate an Example Object that goes into the lexicon (probably need to namespace this)
-    print entry.lex_and_allolex_list()
-    print entry.pos
-    print entry.gloss
-    print match_example.get_mb_list()
-    print match_example.get_ps_list()
-    print match_example.get_ge_list()
+    print(entry.lex_and_allolex_list())
+    print(entry.pos)
+    print(entry.gloss)
+    print(match_example.get_mb_list())
+    print(match_example.get_ps_list())
+    print(match_example.get_ge_list())
 
 #with open("../data/new_arapaho_lexicon.json", 'w') as outfile:
 #  json.dump(lexicon.json_format(), outfile)

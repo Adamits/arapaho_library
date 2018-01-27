@@ -5,7 +5,8 @@ import re
 corpus = Corpus()
 regex = re.compile(r"\bvia.*")
 verb_examples = corpus.get_text_examples({'segments.pos': {"$regex": regex}})
-matching_segs = [segment for example in verb_examples for segment in example.get_segments() if
+print([e.word_segments for e in verb_examples])
+matching_segs = [segment for example in verb_examples for segment in example.word_segments if
                 regex.findall(segment.pos)]
 verb_counts = collections.Counter([matching_seg.pos for matching_seg in matching_segs])
 mb_counts = collections.Counter([(matching_seg.pos, matching_seg.morpheme) for matching_seg in matching_segs])
